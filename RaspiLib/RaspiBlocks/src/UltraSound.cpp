@@ -3,7 +3,7 @@
 #include <RaspiLib.h>
 
 using namespace PiLib;
-
+int a = 0;
 UltraSound::UltraSound(RaspiPinLabel triggerPin, RaspiPinLabel echoPin)
 {
   // get pins & set reference
