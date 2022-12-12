@@ -1,2 +1,3 @@
-# spiderberry
-EMBSYS spider movement project repository
+# RaspiLib
+
+C++ library for the EMBSYS lab
