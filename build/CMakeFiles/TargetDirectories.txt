@@ -1,0 +1,4 @@
+/home/admin/Desktop/Code/spiderberry/build/CMakeFiles/rebuild_cache.dir
+/home/admin/Desktop/Code/spiderberry/build/CMakeFiles/spiderberry_exe.dir
+/home/admin/Desktop/Code/spiderberry/build/CMakeFiles/edit_cache.dir
+/home/admin/Desktop/Code/spiderberry/build/CMakeFiles/spiderberry_library.dir

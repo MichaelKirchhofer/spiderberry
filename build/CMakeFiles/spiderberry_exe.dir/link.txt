@@ -1,0 +1,1 @@
+/usr/bin/arm-linux-gnueabihf-g++ -g CMakeFiles/spiderberry_exe.dir/Code/src/main.cpp.o -o spiderberry_exe  libspiderberry_library.a 
