@@ -232,6 +232,7 @@ ErrorCode Spider::Raise(float value_mm)
   return E_OK;
 }
 
+
 // move the spider
 // later: return false if stopped
 bool Spider::run(float dx, float dy, int speed_ms, float angle, int gait)

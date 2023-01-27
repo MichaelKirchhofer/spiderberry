@@ -23,7 +23,7 @@ void stand_up(int sleepTime, Spider spider);
 void init_led();
 void single_beep(int beep_duration);
 void sos_beep(int beep_count);
-void spider_wave();
+void spider_wave(Spider spider);
 void dance_spider_dance(Spider spider);
 
 
@@ -167,6 +167,16 @@ int go_steps_backward(int steps,float angle){
   return 0;
 }
 
+// @brief This function handles the waving of the spider frontleg
+// @param Spider spider - spider class object
+// @return none
+void spider_wave(Spider spider){
+  
+      
+     m_rightFront = new Leg(15,14,13,false,);
+     
+
+}
 // @brief This function initializes the LED on the back of the spider
 // @param none
 // @return none
