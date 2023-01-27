@@ -15,6 +15,7 @@ using namespace chrono;
 int go_walk(Spider spider);
 void lie_down(int sleep_time, Spider spider);
 void stand_up(int sleepTime, Spider spider);
+void init_buzzer(bool onOff);
 
 int main(int argc, char *argv[])
 {
@@ -114,4 +115,16 @@ int go_steps_forward(int steps,float angle){
 //Go Backward
 int go_steps_backward(int steps,float angle){
   return 0;
+}
+void init_buzzer(bool onOff)
+{
+  IPin *m_buzzer_pin = nullptr;
+  IPin &buzzer_pin = RaspiLib::GetInstance().GetPin(PIN11_GPIO17);
+  m_buzzer_pin = &buzzer_pin;
+
+  if(onOff == true)
+  {
+    buzzer_pin.SetPinMode(FSEL_OUTP);
+    sleep_for(milliseconds(500));
+  }
 }
