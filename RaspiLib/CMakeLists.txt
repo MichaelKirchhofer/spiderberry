@@ -10,7 +10,7 @@ project(RaspiLib)
 #add_subdirectory(RaspiLib/RaspiBlocks)
 #add_subdirectory(RaspiLib/Spider)
 list(APPEND EXTRA_LIBS Spider RaspiBlocks RaspiLib BCM2835 smbus)
-list(APPEND EXTRA_INCLUDES ${PROJECT_SOURCE_DIR}/Spider/inc ${PROJECT_SOURCE_DIR}/RaspiBlocks/inc ${PROJECT_SOURCE_DIR}/RaspiLib/inc ${PROJECT_SOURCE_DIR}/BCM2835 $(PROJECT_SOURCE_DIR)/smbus/include)
+list(APPEND EXTRA_INCLUDES ${PROJECT_SOURCE_DIR}/Spider/inc ${PROJECT_SOURCE_DIR}/RaspiBlocks/inc ${PROJECT_SOURCE_DIR}/RaspiLib/inc ${PROJECT_SOURCE_DIR}/BCM2835 $(PROJECT_SOURCE_DIR)/smbus/inc)
 
 #add_subdirectory(RaspiLibTest)
 #add_subdirectory(SpiderTest)

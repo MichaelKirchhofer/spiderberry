@@ -3,20 +3,34 @@
 #include <UltraSound.h>
 #include <iostream>
 #include <chrono>
-#include<thread>
+#include <thread>
 
+//User defines
+#define MAX_TURN_ANGLE 20
+#define TURN_STEP 5
+
+//Namespace declarations
 using namespace PiLib;
 using namespace std;
 using namespace SpiderLib;
 using namespace this_thread;
 using namespace chrono;
 
-
-int go_walk(Spider spider);
+//Function prototypes
+int  go_walk(Spider spider);
 void lie_down(int sleep_time, Spider spider);
 void stand_up(int sleepTime, Spider spider);
-void init_buzzer(bool onOff);
+void init_led();
+void single_beep(int beep_duration);
+void sos_beep(int beep_count);
+void spider_wave();
+void dance_spider_dance(Spider spider);
 
+
+
+// @brief Main function
+// @param int argc, char* argv[] - standard main function parameters
+// @return int - status indicator
 int main(int argc, char *argv[])
 {
   unsigned mVersion, lVersion;
@@ -34,12 +48,16 @@ int main(int argc, char *argv[])
   Spider mySpider;
   ErrorCode err = mySpider.Init();
   
+  //Go into spider runtime
   go_walk(mySpider);
 
   return 0;
 }
 
-//Walk 
+
+// @brief This function implements the basic walking and evasion procedures
+// @param Spider spider - The spider object
+// @return int - status indicator
 int go_walk(Spider spider){
 
     int init_turn = 0;
@@ -49,38 +67,65 @@ int go_walk(Spider spider){
     PiLib::ErrorCode err_raise = spider.Raise(-80.);
     PiLib::ErrorCode err_stop;
     bool err_run;
-    int angle = -15;
+    int angle = -20;
+
+    int turn_tries = 0;
 
     while(1){
       //Walk until obstacle is detected
-      if(usound.GetDistance() > 40){
-        err_run = spider.run(0,-10,1000,0,1);
+      while(usound.GetDistance() > 60){
+        err_run = spider.run(0,-30,2000,0,1);
         init_turn = 1;
-      }else if(init_turn){
-        //lie_down(1,spider);
-        //stand_up(1,spider);
-        
-        if(angle > 15){
-          angle = angle +5;
-        }else{
-          angle = -15;
-        }
-        err_run = spider.run(0,-10,1000,angle,1);
-        sleep_for(milliseconds(500));
-        init_turn = 0;
-      }else if(!init_turn && usound.GetDistance() < 40){
-        init_turn = 0;
       }
       
-    }
+      //Obstacle detected
+      while(init_turn){
+          
+          //Beep once to notify about found obstacle
+          single_beep(500);
+          
+          //Init danger led ring
+          init_led();
+        
+          //Try differrent angles
+          if(angle < 20){
+            angle = angle +5;
+            turn_tries ++;
+          }else{
+            turn_tries ++;
+            angle = -15;
+          }
+
+          //After number of tries, go to floor level and beep in an SOS pattern
+          if(turn_tries > 5){
+            lie_down(1,spider);
+            sos_beep(2);
+          }
+          //Try evading the obstacle
+          err_run = spider.run(0,0,2000,angle,1);
+          sleep_for(milliseconds(1000));
+         
+        //Break out of evasion pattern  
+        if(usound.GetDistance() > 60){
+          init_turn = 0;
+          angle = -15;
+          turn_tries = 0;
+        }
+     }
+  }
+  return 0;
 
 }
+
+// @brief This function implements the lying down feature the spiderbot
+// @param none
+// @return none
 void lie_down(int sleepTime, Spider spider){
 
       int step_down = -80;
       while(step_down < 0){
         bool err_raise = spider.Raise(step_down);
-        bool err_run = spider.run(0,5,1000,5,1);
+        bool err_run = spider.run(0,0,1000,0,1);
         step_down = step_down + 20;
         for(int i = 0; i < 1000000;i++){
         }
@@ -88,12 +133,17 @@ void lie_down(int sleepTime, Spider spider){
       sleep_for(seconds(sleepTime));
 }
 
+
+
+// @brief This function implements the standing up feature the spiderbot
+// @param none
+// @return none
 void stand_up(int sleepTime, Spider spider){
 
     int step_up = 0;
     while(step_up > -80){
       bool err_raise = spider.Raise(step_up);
-        bool err_run = spider.run(0,5,1000,5,1);
+        bool err_run = spider.run(0,0,1000,0,1);
         step_up = step_up - 20;
         for(int i = 0; i < 1000000;i++){
         }
@@ -116,15 +166,93 @@ int go_steps_forward(int steps,float angle){
 int go_steps_backward(int steps,float angle){
   return 0;
 }
-void init_buzzer(bool onOff)
+
+// @brief This function initializes the LED on the back of the spider
+// @param none
+// @return none
+void dance_spider_dance(Spider spider){
+  
+    
+
+}
+
+// @brief This function initializes the LED on the back of the spider
+// @param none
+// @return none
+void init_led(){
+
+  int numberOfLed = 7;
+  IPin *m_LED_pin = nullptr;
+  IPin &LED_pin = RaspiLib::GetInstance().GetPin(PIN12_GPIO18_PCMC);
+  m_LED_pin = &LED_pin;
+  LED_pin.SetPinMode(FSEL_OUTP);
+  m_LED_pin->WriteBool(true);
+
+}
+
+
+// @brief This function implements the lying down feature the spiderbot
+// @param bool 
+// @return none
+void single_beep(int beep_duration)
 {
   IPin *m_buzzer_pin = nullptr;
   IPin &buzzer_pin = RaspiLib::GetInstance().GetPin(PIN11_GPIO17);
   m_buzzer_pin = &buzzer_pin;
 
-  if(onOff == true)
-  {
-    buzzer_pin.SetPinMode(FSEL_OUTP);
+  buzzer_pin.SetPinMode(FSEL_OUTP);
+
+  m_buzzer_pin->WriteBool(true);
+  sleep_for(milliseconds(beep_duration));
+  m_buzzer_pin->WriteBool(false);
+  
+}
+
+// @brief This function implements the lying down feature the spiderbot
+// @param int beep_count - number of sos signal cycles
+// @return none
+void sos_beep(int beep_count){
+
+  for(int i = 0; i< beep_count;i++){
+    /********************************
+    * Short beep section
+    * ******************************/
+    // first beep
+    single_beep(100);
+    sleep_for(milliseconds(100));
+    // second beep
+    single_beep(100);
+    sleep_for(milliseconds(100));
+    // third beep
+    single_beep(100);
     sleep_for(milliseconds(500));
+    /********************************
+    * Long beep section
+    * ******************************/
+    // first beep
+    single_beep(300);
+    sleep_for(milliseconds(300));
+    // second beep
+    single_beep(300);
+    sleep_for(milliseconds(300));
+    // third beep
+    single_beep(300);
+    sleep_for(milliseconds(500));
+    /********************************
+    * Short beep section
+    * ******************************/
+    // first beep
+    single_beep(100);
+    sleep_for(milliseconds(100));
+    // second beep
+    single_beep(100);
+    sleep_for(milliseconds(100));
+    // third beep
+    single_beep(100);
+    /********************************
+    * Wait after Signal
+    * ******************************/
+    sleep_for(milliseconds(3000));
+
   }
 }
