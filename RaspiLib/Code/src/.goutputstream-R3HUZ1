@@ -5,9 +5,6 @@
 #include <chrono>
 #include <thread>
 #include <unistd.h>
-#include <cstdlib>
-#include <pthread.h>
-#include <string>
 
 
 /* LED lib */
@@ -18,16 +15,9 @@
 //User defines
 #define MAX_TURN_ANGLE 20
 #define TURN_STEP 5
-#define DANCE_STEP 2
-#define MAX_DANCE_CYCLES 5
-#define DANCE_CYCLE_TIME_MULTIPLIER 2
+#define DANCE_STEP 1
+#define MAX_DANCE_CYCLES 10
 #define SPIDER_SPEED 500
-
-
-struct thread_data{
-  int thread_id;
-  int beep_cycles;
-};
 
 //Namespace declarations
 using namespace PiLib;
@@ -44,8 +34,8 @@ void stand_up(int sleepTime, Spider *spider);
 void single_beep(int beep_duration);
 void sos_beep(int beep_count);
 void spider_wave(Spider *spider);
-void dance_spider_dance(Spider *spider,int dance_cycles);
-void *walz_beep_thread(void *threadarg);
+void dance_spider_dance(Spider *spider);
+
 
 
 // @brief Main function
@@ -83,7 +73,7 @@ int main(int argc, char *argv[])
   
   //Go into spider runtime
   //go_walk(mySpider,p_ledstring);
-  dance_spider_dance(p_spider,MAX_DANCE_CYCLES);
+  dance_spider_dance(p_spider);
   
   return 0;
 }
@@ -143,7 +133,7 @@ int go_walk(Spider *spider, ws2811_t *ledstring){
           if(turn_tries > 5){
             lie_down(1,spider);
             turn_tries = 0;
-            cout << "Obstacle could't be avoided, SOS!\n";
+            cout << "Obstacle cannot be avoided, SOS!\n";
             sos_beep(2);
           }
           //Try evading the obstacle
@@ -208,100 +198,48 @@ void spider_wave(Spider *spider){
 }
 // @brief This function implements a walz dance routine using the run
 // function and the beeper as a companion melody
-// @param Spider spider - pointer to spider object, 
-// int dance_cycles - number of dance cycles  
+// @param Spider spider - spider class object 
 // @return none
-void dance_spider_dance(Spider *spider,int dance_cycles){
-  
-  int cycles = 0;
-  pthread_t walz_thread;
-  struct thread_data data;
-  data.thread_id = 1;
-  data.beep_cycles = dance_cycles;
-  // Set dance cycle according to user input or set max if user input
-  cycles = dance_cycles;
-  cout << "Spider is going to be dancing for: "<< cycles <<" dance cycles!";
+void dance_spider_dance(Spider *spider){
   
   bool err_run = false;
-  int steps = DANCE_STEP;
-  
-  int thread_create = pthread_create(&walz_thread,NULL,walz_beep_thread,(void *)&data);
-  
-  if(thread_create){
-    cerr << "Error while creating walz beeper thread!\n";
-    cerr << "Dancing without beep should be possible!\n";
-  }
-  
-  while(cycles > 0){
-    cout << "Start dancing \nLegs foward, Cycles remaining: "<< cycles << " \n";
+  int i = DANCE_STEP;
+  int j = MAX_DANCE_CYCLES;
+  while(j > 0){
+    cout << "Start dancing \nLegs foward, Index: "<< i << " \n";
     while(1){
-      err_run = spider->run(0,-25,SPIDER_SPEED,0,1);
-      if(steps > 0){
-        steps--;
+      err_run = spider->run(0,-20,SPIDER_SPEED,0,1);
+      if(i> 0){
+        i--;
       }else{
         break;
       }
     }
-    steps = DANCE_STEP;
+    i = DANCE_STEP;
     cout << "Go backwards \n";
     while(1){
       err_run = spider->run(0,20,SPIDER_SPEED,5,1);
-      if(steps > 0){
-        steps--;
+      if(i> 0){
+        i--;
       }else{
         break;
       }
     }
-    cycles--;
-    steps = DANCE_STEP ;
+    /*i = DANCE_STEP/2;
+    cout << "Go backwards \n";
+    while(1){
+      err_run = spider->run(0,-20,1000,10,1);
+      if(i> 0){
+        i--;
+      }else{
+        break;
+      }
+    }*/
+    j--;
+    i= DANCE_STEP ;
   }
-  
-  pthread_exit(NULL);
   lie_down(10,spider);
-  
-}
 
-// @brief This function implements the beep sequence for the dancing spider
-// using a seperate thread to handle beeping and moving at the same time
-// @param void* threadarg - multithreading parameter, thread id and cycle number
-// @return none
-void *walz_beep_thread(void *threadarg)
-{
-  struct thread_data *arg;
-  arg = (struct thread_data*) threadarg;
-  int beep_cycles = (arg->beep_cycles * DANCE_CYCLE_TIME_MULTIPLIER)+1;
-  
-  IPin *m_buzzer_pin = nullptr;
-  IPin &buzzer_pin = RaspiLib::GetInstance().GetPin(PIN11_GPIO17);
-  m_buzzer_pin = &buzzer_pin;
-
-  buzzer_pin.SetPinMode(FSEL_OUTP);
-  while(beep_cycles > 0){
-    /********************************
-    * First tune
-    * ******************************/
-    m_buzzer_pin->WriteBool(true);
-    sleep_for(milliseconds(500));
-    m_buzzer_pin->WriteBool(false);
-    sleep_for(milliseconds(250));
-    /********************************
-    * Second tune
-    * ******************************/
-    m_buzzer_pin->WriteBool(true);
-    sleep_for(milliseconds(150));
-    m_buzzer_pin->WriteBool(false);
-    sleep_for(milliseconds(600));
-    /********************************
-    * Third tune
-    * ******************************/
-    m_buzzer_pin->WriteBool(true);
-    sleep_for(milliseconds(150));
-    m_buzzer_pin->WriteBool(false);
-    sleep_for(milliseconds(600));
-    beep_cycles--;
-  }
-  pthread_exit(NULL);
-  
 }
 
 // @brief This function initializes the LED on the back of the spider
@@ -309,7 +247,7 @@ void *walz_beep_thread(void *threadarg)
 // @return none
 ws2811_t init_led(){
 
-  cout << "Init LED circle!\n";
+  cout << "Init LED circle!";
   
   ws2811_return_t ret;
   //ws2811_t ledstring = {0,0,(const rpi_hw_t*)WS2811_TARGET_FREQ,10,18,0,7,125,WS2811_STRIP_RGB,0};
@@ -332,6 +270,7 @@ ws2811_t init_led(){
   return ledstring;
 
 }
+
 
 // @brief This function implements the lying down feature the spiderbot
 // @param bool 

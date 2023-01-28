@@ -2,6 +2,10 @@ cmake_minimum_required(VERSION 3.16)
 
 project(RaspiLib)
 
+set(CMAKE_THREAD_PREFER_PTHREAD TRUE)
+set(THREADS_PREFER_PTHREAD_FLAG TRUE)
+find_package(Threads REQUIRED)
+
 #add_subdirectory(BCM2835)
 #add_subdirectory(smbus)
 
@@ -9,8 +13,15 @@ project(RaspiLib)
 #add_subdirectory(Code)
 #add_subdirectory(RaspiLib/RaspiBlocks)
 #add_subdirectory(RaspiLib/Spider)
-list(APPEND EXTRA_LIBS Spider RaspiBlocks RaspiLib BCM2835 smbus)
-list(APPEND EXTRA_INCLUDES ${PROJECT_SOURCE_DIR}/Spider/inc ${PROJECT_SOURCE_DIR}/RaspiBlocks/inc ${PROJECT_SOURCE_DIR}/RaspiLib/inc ${PROJECT_SOURCE_DIR}/BCM2835 $(PROJECT_SOURCE_DIR)/smbus/inc)
+list(APPEND EXTRA_LIBS Spider RaspiBlocks RaspiLib BCM2835 smbus rpi_ws281x Samples)
+list(APPEND EXTRA_INCLUDES 
+${PROJECT_SOURCE_DIR}/Spider/inc 
+${PROJECT_SOURCE_DIR}/Samples/TestApp/inc  
+${PROJECT_SOURCE_DIR}/rpi_ws281x 
+${PROJECT_SOURCE_DIR}/RaspiBlocks/inc 
+${PROJECT_SOURCE_DIR}/RaspiLib/inc 
+${PROJECT_SOURCE_DIR}/BCM2835 
+$(PROJECT_SOURCE_DIR)/smbus/inc)
 
 #add_subdirectory(RaspiLibTest)
 #add_subdirectory(SpiderTest)
@@ -33,6 +44,15 @@ RaspiLib/src/RaspiLib.cpp
 RaspiLib/src/Utils.cpp
 RaspiLib/src/Vector3D.cpp
 
+#LED libraries
+rpi_ws281x/pwm.c
+rpi_ws281x/dma.c
+rpi_ws281x/mailbox.c
+rpi_ws281x/rpihw.c
+rpi_ws281x/ws2811.c
+rpi_ws281x/pcm.c
+Samples/TestApp/src/adcSample.cpp
+
 RaspiBlocks/src/ADS7830.cpp
 RaspiBlocks/src/HTS221.cpp
 RaspiBlocks/src/LCD_I2C.cpp
@@ -54,10 +74,10 @@ BCM2835/bcm2835.c
 BCM2835/bcm2835_wrapper.c
 BCM2835/bcm2835_fake.c)
 
-target_include_directories(spiderberry_library PUBLIC  Code/ RaspiLib/inc/ RaspiBlocks/inc Spider/inc smbus/inc/ BCM2835/)
+target_include_directories(spiderberry_library PUBLIC  Code/ RaspiLib/inc/ RaspiBlocks/inc Spider/inc smbus/inc/ BCM2835/ rpi_ws281x/ Samples/TestApp/inc)
 
 add_executable(spiderberry_exe Code/src/main.cpp)
-target_link_libraries(spiderberry_exe PRIVATE spiderberry_library)
+target_link_libraries(spiderberry_exe PRIVATE spiderberry_library Threads::Threads)
 
 #enable_testing()
 
