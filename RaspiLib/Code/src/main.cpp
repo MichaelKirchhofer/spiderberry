@@ -14,13 +14,22 @@
 #include "ws2811.h" 
 #include "adcSample.h"
 
+//Cout defines
+#define BLACK   "\033[0m"
+#define WHITE   "\033[1;37m"
+#define RED     "\033[1;31m"
+#define GREEN   "\033[1;32m"
+#define YELLOW  "\033[1;33m"
+#define BLUE    "\033[1;34m"
+#define CYAN    "\033[1;36m"
+
 
 //User defines
 #define MAX_TURN_ANGLE 20
 #define TURN_STEP 5
 #define DANCE_STEP 2
 #define MAX_DANCE_CYCLES 5
-#define DANCE_CYCLE_TIME_MULTIPLIER 2
+#define DANCE_CYCLE_TIME_MULTIPLIER 3
 #define SPIDER_SPEED 500
 
 
@@ -56,7 +65,7 @@ int main(int argc, char *argv[])
   unsigned mVersion, lVersion;
   RaspiLib::LibVersion(mVersion, lVersion);
 
-  cout << "using PiLib Version " << mVersion << "." << lVersion << endl;
+  cout << WHITE <<"using PiLib Version " << mVersion << "." << lVersion << endl;
 
   bool isOk = RaspiLib::Startup();
   if (! isOk)
@@ -64,10 +73,6 @@ int main(int argc, char *argv[])
     cerr << "Problems on initializing PiLib - aborting" << endl;
     return -1;
   }
-  
- 
-  
-  //ws2811_fini(&ledstring);
   
   //Init Spider
   cout << "Starting spider runtime !\n";
@@ -220,7 +225,7 @@ void dance_spider_dance(Spider *spider,int dance_cycles){
   data.beep_cycles = dance_cycles;
   // Set dance cycle according to user input or set max if user input
   cycles = dance_cycles;
-  cout << "Spider is going to be dancing for: "<< cycles <<" dance cycles!";
+  cout << WHITE <<"Spider is going to be dancing for: "<< cycles <<" dance cycles!\n";
   
   bool err_run = false;
   int steps = DANCE_STEP;
@@ -230,10 +235,12 @@ void dance_spider_dance(Spider *spider,int dance_cycles){
   if(thread_create){
     cerr << "Error while creating walz beeper thread!\n";
     cerr << "Dancing without beep should be possible!\n";
+  }else{
+    cout << GREEN << "Detached beep thread from main runtime!\n";
   }
   
   while(cycles > 0){
-    cout << "Start dancing \nLegs foward, Cycles remaining: "<< cycles << " \n";
+    cout << WHITE <<"Legs foward, Cycles remaining: "<< cycles << " \n";
     while(1){
       err_run = spider->run(0,-25,SPIDER_SPEED,0,1);
       if(steps > 0){
@@ -256,6 +263,15 @@ void dance_spider_dance(Spider *spider,int dance_cycles){
     steps = DANCE_STEP ;
   }
   
+  void *status;
+  int thread_join = pthread_join(walz_thread, &status);
+  
+  if(thread_join != 0){
+    cerr <<  "Error in joining beep thread back into main runtime!\n";
+  }else{
+    cout << GREEN << "Successfully joined main and secondary threads!\n";
+  }
+  
   pthread_exit(NULL);
   lie_down(10,spider);
   
@@ -269,34 +285,25 @@ void *walz_beep_thread(void *threadarg)
 {
   struct thread_data *arg;
   arg = (struct thread_data*) threadarg;
-  int beep_cycles = (arg->beep_cycles * DANCE_CYCLE_TIME_MULTIPLIER)+1;
   
-  IPin *m_buzzer_pin = nullptr;
-  IPin &buzzer_pin = RaspiLib::GetInstance().GetPin(PIN11_GPIO17);
-  m_buzzer_pin = &buzzer_pin;
-
-  buzzer_pin.SetPinMode(FSEL_OUTP);
+  //Calculate the approximate dance duration to adjust beep timings
+  int beep_cycles = (arg->beep_cycles * DANCE_CYCLE_TIME_MULTIPLIER)-2;
+  
   while(beep_cycles > 0){
     /********************************
     * First tune
     * ******************************/
-    m_buzzer_pin->WriteBool(true);
-    sleep_for(milliseconds(500));
-    m_buzzer_pin->WriteBool(false);
+    single_beep(500);
     sleep_for(milliseconds(250));
     /********************************
     * Second tune
     * ******************************/
-    m_buzzer_pin->WriteBool(true);
-    sleep_for(milliseconds(150));
-    m_buzzer_pin->WriteBool(false);
+    single_beep(150);
     sleep_for(milliseconds(600));
     /********************************
     * Third tune
     * ******************************/
-    m_buzzer_pin->WriteBool(true);
-    sleep_for(milliseconds(150));
-    m_buzzer_pin->WriteBool(false);
+    single_beep(100);
     sleep_for(milliseconds(600));
     beep_cycles--;
   }
@@ -309,7 +316,7 @@ void *walz_beep_thread(void *threadarg)
 // @return none
 ws2811_t init_led(){
 
-  cout << "Init LED circle!\n";
+  cout << CYAN <<"Init LED circle!\n";
   
   ws2811_return_t ret;
   //ws2811_t ledstring = {0,0,(const rpi_hw_t*)WS2811_TARGET_FREQ,10,18,0,7,125,WS2811_STRIP_RGB,0};
@@ -354,7 +361,9 @@ void single_beep(int beep_duration)
 // @param int beep_count - number of sos signal cycles
 // @return none
 void sos_beep(int beep_count){
-
+  
+  cout << YELLOW << "Started SOS beeping!\n";
+  
   for(int i = 0; i< beep_count;i++){
     /********************************
     * Short beep section
