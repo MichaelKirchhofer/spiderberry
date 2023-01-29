@@ -1,22 +1,19 @@
+/**
+ * @file main.cpp
+ * @brief Implements move functions for the spiderbot
+ */
 #include <move.h>
-
-//Namespace declarations
-using namespace PiLib;
-using namespace std;
-using namespace SpiderLib;
-using namespace this_thread;
-using namespace chrono;
 
 // @brief This function implements the basic walking and evasion procedures
 // @param Spider spider - The spider object
 // @return int - status indicator
-int go_walk(Spider *spider, ws2811_t *ledstring){
-
+int go_walk(Spider *spider, ws2811_t *ledstring, int obstacles_until_quit){
 
 	//Preparations for run / init run variables
     int init_turn = 0;
     int angle = - MAX_TURN_ANGLE;
     int turn_tries = 0;
+    int obstacles;
     PiLib::ErrorCode err_stop;
     bool err_run;
     //Set spider height
@@ -27,7 +24,7 @@ int go_walk(Spider *spider, ws2811_t *ledstring){
     const RaspiPinLabel SpiderEchoPin = PIN15_GPIO22;
     UltraSound usound(SpiderTriggerPin, SpiderEchoPin);
     
-	while(1){
+	while (obstacles < obstacles_until_quit){
       //Walk until obstacle is detected
       while(usound.GetDistance() > 50){
         
@@ -62,10 +59,19 @@ int go_walk(Spider *spider, ws2811_t *ledstring){
 
           //After number of tries, go to floor level and beep in an SOS pattern
           if(turn_tries > 5){
+			
+			obstacles++;
+            if(obstacles == obstacles_until_quit){
+				break;
+			}
+			
             lie_down(1,spider);
             turn_tries = 0;
-            cout << "Obstacle could't be avoided, SOS!\n";
+            cout << RED << "Obstacle could't be avoided, SOS!\n";
+            cout << "Obstacles remaining until shutdown to menu: "<<
+            obstacles_until_quit-obstacles<< " !\n";
             sos_beep(2);
+            
           }
           //Try evading the obstacle
           err_run = spider->run(0,0,SPIDER_SPEED,angle,1);
@@ -96,8 +102,7 @@ void lie_down(int sleepTime, Spider *spider){
         bool err_raise = spider->Raise(step_down);
         bool err_run = spider->run(0,0,1000,0,1);
         step_down = step_down + 20;
-        for(int i = 0; i < 1000000;i++){
-        }
+        sleep_for(milliseconds(20));
       }
     sleep_for(seconds(sleepTime));
 }
@@ -114,20 +119,11 @@ void stand_up(int sleepTime, Spider *spider){
       bool err_raise = spider->Raise(step_up);
         bool err_run = spider->run(0,0,1000,0,1);
         step_up = step_up - 20;
-        for(int i = 0; i < 1000000;i++){
-        }
+        sleep_for(milliseconds(20));
       }
       sleep_for(seconds(sleepTime));
 }
 
-// @brief This function handles the waving of the spider frontleg
-// @param Spider spider - spider class object
-// @return none
-void spider_wave(Spider *spider){
-  
-     
-
-}
 // @brief This function implements a walz dance routine using the run
 // function and the beeper as a companion melody
 // @param Spider spider - pointer to spider object, 
@@ -137,7 +133,7 @@ void dance_spider_dance(Spider *spider,int dance_cycles){
   
   int cycles = 0;
   pthread_t walz_thread;
-  struct thread_data data;
+  struct thread_data_beeper data;
   data.thread_id = 1;
   data.beep_cycles = dance_cycles;
   // Set dance cycle according to user input or set max if user input
@@ -190,6 +186,5 @@ void dance_spider_dance(Spider *spider,int dance_cycles){
   }else{
     cout << GREEN << "Successfully joined main and secondary threads!\n";
   }
-  //pthread_exit(NULL);
   
 }

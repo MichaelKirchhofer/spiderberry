@@ -1,3 +1,7 @@
+/**
+ * @file main.h
+ * @brief Provides includes and definitions for spider functions
+ */
 #ifndef _MAIN_H_INCLUDED
 #define _MAIN_H_INCLUDED
 
@@ -36,7 +40,6 @@
 #define BLUE    "\033[1;34m"
 #define CYAN    "\033[1;36m"
 
-
 //Namespace declarations
 using namespace PiLib;
 using namespace std;
@@ -44,10 +47,18 @@ using namespace SpiderLib;
 using namespace this_thread;
 using namespace chrono;
 
-//Multithreading parameter struct
-struct thread_data{
+//Multithreading parameter structs
+
+//Beeper
+struct thread_data_beeper{
   int thread_id;
   int beep_cycles;
+};
+
+//Move and evasion
+struct thread_data_spider{
+	int thread_id;
+	Spider *p_spider;
 };
 
 //Function prototypes

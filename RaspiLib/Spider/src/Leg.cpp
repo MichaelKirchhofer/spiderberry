@@ -52,7 +52,7 @@ ErrorCode Leg::stretch()
 
 ErrorCode Leg::idlePosition()
 {
-  Vector3D idle(140.,0.,0.);
+  Vector3D idle(150.,10.,40.);
   return gotoLegPosition(idle);
 }
 

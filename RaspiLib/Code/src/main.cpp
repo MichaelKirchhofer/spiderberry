@@ -1,3 +1,7 @@
+/**
+ * @file main.c
+ * @brief Provides program entry point and user interface
+ */
 #include <main.h>
 
 // @brief Main function
@@ -18,13 +22,16 @@ int main(int argc, char *argv[])
   }
   
   int is_running = handle_user_io();
+    
   
-  return 0;
+  return is_running;
 }
 
+// @brief User input handler function
+// @param none
+// @return int state - exit condition
 int handle_user_io(){
 
-  
   //Init Spider
   Spider mySpider;
   Spider *p_spider = &mySpider;
@@ -53,6 +60,8 @@ int handle_user_io(){
   int dance_cycles;
   //Beep
   int number_of_beeps;
+  //Walk
+  int obstacles_until_quit;
   
   while(is_running){
     
@@ -60,7 +69,9 @@ int handle_user_io(){
     cin >> user_input;
     
     switch (user_input){
-      // Wave
+      /********************************
+      * Wave
+      * ******************************/
       case 1:
         // Wave counter
         cout << CYAN << "\n---------- WAVE MODE ----------\n";
@@ -100,7 +111,10 @@ int handle_user_io(){
         }
         mySpider.waveLeg(wave_counter,wave_start_pos,wave_stop_pos,leg_index);
         break;
-      // Dance  
+        
+      /********************************
+      * Dance Spider Dance !!
+      ********************************/ 
       case 2:
         cout << CYAN << "\n---------- DANCE SPIDER DANCE----------\n";
         cout <<  "\nHow many dance cylces should I do ? (2 - 99)\n";
@@ -113,13 +127,21 @@ int handle_user_io(){
         stand_up(1,p_spider);
         break;
         
-      //Walk and obstacle detection  
+      /********************************
+      * Walk and Evade
+      ********************************/  
       case 3:
         cout << CYAN << "\n---------- WALK AND EVADE MODE ----------\n";
-        cout <<"\nStarting walking and obstacle evasion procedure!\n";
-        go_walk(p_spider,p_ledstring);
+        cout << "Spider will shutdown after set number of unavigable object have been encountered!\n";
+        cout << "Please enter shutdown threshold number: ";
+        cin >> obstacles_until_quit;
+        cout <<"\nStarting walking and obstacle evasion procedure until "<<
+        obstacles_until_quit<< " number of objects encountered!\n";
+        go_walk(p_spider,p_ledstring,obstacles_until_quit);
         break;
-      // SOS beep  
+      /********************************
+      * SOS Beep
+      ********************************/ 
       case 4:
         cout << CYAN << "\n---------- SOS BEEP MODE ----------\n";
         cout << "\nHow many beeps do you want ?(1 - 99)\n";
@@ -132,7 +154,9 @@ int handle_user_io(){
         sos_beep(number_of_beeps);
         break;
         
-      // Shutdown  
+      /********************************
+      * Exit
+      ********************************/   
       case 99:
         cout << "Thank you for using SPIDERBERRY!\n";
         err = mySpider.waveLeg(5,20,80,3);
@@ -140,7 +164,9 @@ int handle_user_io(){
         is_running = false;
         break;
         
-      //Default   
+      /********************************
+      * Default (Display Menu)
+      ********************************/    
       default:
         print_user_menu();
         cin >> user_input;
@@ -157,12 +183,12 @@ int handle_user_io(){
   return 0;
 }
 
-// @brief This function prints out the apllication user menu
+// @brief This function prints out the top level user menu
 // @param none
 // @return none
 void print_user_menu(){
    cout << CYAN << "----------------------------------------\n";
-   cout << "Please choose a function out of the list !";
+   cout << "Please choose a function out of the list !\n";
    cout << "Function List:\n1 - Wave \n2 - Dance\n";
    cout << "3 - Walk and detect obstacles\n";
    cout << "4 - Set off SOS beep pattern\n";

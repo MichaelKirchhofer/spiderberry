@@ -1,11 +1,8 @@
+/**
+ * @file beep.h
+ * @brief Implements raspberry beeper functions
+ */
 #include <beep.h>
-
-//Namespace declarations
-using namespace PiLib;
-using namespace std;
-using namespace SpiderLib;
-using namespace this_thread;
-using namespace chrono;
 
 // @brief This function implements the beep sequence for the dancing spider
 // using a seperate thread to handle beeping and moving at the same time
@@ -13,8 +10,8 @@ using namespace chrono;
 // @return none
 void *walz_beep_thread(void *threadarg)
 {
-  struct thread_data *arg;
-  arg = (struct thread_data*) threadarg;
+  struct thread_data_beeper *arg;
+  arg = (struct thread_data_beeper*) threadarg;
   
   //Calculate the approximate dance duration to adjust beep timings
   int beep_cycles = (arg->beep_cycles * DANCE_CYCLE_TIME_MULTIPLIER)-2;
