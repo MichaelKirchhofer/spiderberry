@@ -1,0 +1,446 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "libspiderberry_library.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 37,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 83,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "/home/admin/Desktop/Code/spiderberry/RaspiLib/Code/inc"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/inc"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/admin/Desktop/Code/spiderberry/RaspiLib/Spider/inc"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/admin/Desktop/Code/spiderberry/RaspiLib/smbus/inc"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/admin/Desktop/Code/spiderberry/RaspiLib/BCM2835"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/admin/Desktop/Code/spiderberry/RaspiLib/Samples/TestApp/inc"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "/home/admin/Desktop/Code/spiderberry/RaspiLib/Code/inc"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/inc"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/admin/Desktop/Code/spiderberry/RaspiLib/Spider/inc"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/admin/Desktop/Code/spiderberry/RaspiLib/smbus/inc"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/admin/Desktop/Code/spiderberry/RaspiLib/BCM2835"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/admin/Desktop/Code/spiderberry/RaspiLib/Samples/TestApp/inc"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				33,
+				34,
+				35
+			]
+		}
+	],
+	"id" : "spiderberry_library::@6890427a1f51a3e7e1df",
+	"name" : "spiderberry_library",
+	"nameOnDisk" : "libspiderberry_library.a",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "RaspiLib/src/I2C_bcm2835.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "RaspiLib/src/I2C_smbus.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "RaspiLib/src/I2C.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "RaspiLib/src/KalmanFilter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "RaspiLib/src/Pin.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "RaspiLib/src/Quaternion.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "RaspiLib/src/RaspiBoard.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "RaspiLib/src/RaspiLib.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "RaspiLib/src/Utils.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "RaspiLib/src/Vector3D.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "rpi_ws281x/pwm.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "rpi_ws281x/dma.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "rpi_ws281x/mailbox.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "rpi_ws281x/rpihw.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "rpi_ws281x/ws2811.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "rpi_ws281x/pcm.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Samples/TestApp/src/adcSample.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "RaspiBlocks/src/ADS7830.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "RaspiBlocks/src/HTS221.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "RaspiBlocks/src/LCD_I2C.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "RaspiBlocks/src/lcd.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "RaspiBlocks/src/LPS25H.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "RaspiBlocks/src/MPU6050.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "RaspiBlocks/src/PCA9685.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "RaspiBlocks/src/PCF8563.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "RaspiBlocks/src/PCF8591.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "RaspiBlocks/src/UltraSound.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Spider/src/Leg.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Spider/src/Spider.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Spider/src/world.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Code/src/beep.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Code/src/move.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "smbus/src/smbus.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "BCM2835/bcm2835.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "BCM2835/bcm2835_wrapper.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "BCM2835/bcm2835_fake.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

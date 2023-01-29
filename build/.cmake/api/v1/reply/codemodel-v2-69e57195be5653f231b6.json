@@ -1,0 +1,68 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "RaspiLib",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "spiderberry_exe::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-spiderberry_exe-Debug-5746c5def51b8c03df9a.json",
+					"name" : "spiderberry_exe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "spiderberry_library::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-spiderberry_library-Debug-1ab479bda80b775de051.json",
+					"name" : "spiderberry_library",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/admin/Desktop/Code/spiderberry/build",
+		"source" : "/home/admin/Desktop/Code/spiderberry/RaspiLib"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 1
+	}
+}
