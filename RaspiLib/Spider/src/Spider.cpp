@@ -3,6 +3,7 @@
 
 #include <RaspiLib.h>
 #include <Utils.h>
+#include <iostream>
 
 // servos
 #include <PCA9685.h>
@@ -231,6 +232,54 @@ ErrorCode Spider::Raise(float value_mm)
 
   return E_OK;
 }
+
+/******************************
+ * Move font right leg
+ * ****************************/
+ErrorCode Spider::waveLeg(int wave_counter,int wave_start,int wave_stop,int leg_id){
+  
+  PiLib::ErrorCode err;
+  Leg *p_leg;
+  
+  cout << "Leg index "<< leg_id<<"\n";
+  
+  switch(leg_id){
+     case 0:
+      p_leg = this->m_leftFront;
+      break;
+     case 1:
+      p_leg = this->m_leftMiddle;
+      break;
+     case 2:
+      p_leg = this->m_leftBack;
+      break;
+     case 3:
+      p_leg = this->m_rightFront;
+      break;
+     case 4:
+      p_leg = this->m_rightMiddle;
+      break;
+     case 5:
+      p_leg = this->m_rightBack;
+      break;
+     default:
+      cerr << "Could not wave as leg index was out of bounds!\n";
+      return E_NOT_INIT;
+      
+    }
+  
+  for(int i = 0; i < wave_counter; i ++){
+      err = p_leg->setAngle(100,-80,wave_start);
+      Utils::delay_ms(100);    
+      err = p_leg->setAngle(90,-80,wave_stop);
+      Utils::delay_ms(100);
+      err = p_leg->setAngle(100,-80,wave_start);
+      Utils::delay_ms(100);
+   }
+    
+  return err;
+}
+
 
 
 // move the spider

@@ -41,35 +41,6 @@ void *walz_beep_thread(void *threadarg)
   
 }
 
-// @brief This function initializes the LED on the back of the spider
-// @param none
-// @return none
-ws2811_t init_led(){
-
-  cout << CYAN <<"Init LED circle!\n";
-  
-  ws2811_return_t ret;
-  //ws2811_t ledstring = {0,0,(const rpi_hw_t*)WS2811_TARGET_FREQ,10,18,0,7,125,WS2811_STRIP_RGB,0};
-  ws2811_t ledstring = {};
-  ledstring.freq = WS2811_TARGET_FREQ; // 800000 Hz
-  ledstring.dmanum = 10; // DMA
-  ws2811_channel_t channel = {};
-  channel.gpionum = 18; // Pin 12 (GPIO 18)
-  channel.count = 7; // number of LEDs
-  channel.invert = 0;
-  channel.brightness = 255;
-  
-  ledstring.channel[0] = channel;
-  
-  if((ret = ws2811_init(&ledstring)) != WS2811_SUCCESS)
-  {
-    cerr << "ws2811_init failed:  " << ws2811_get_return_t_str(ret) << " \n";
-  }
-  
-  return ledstring;
-
-}
-
 // @brief This function implements the lying down feature the spiderbot
 // @param bool 
 // @return none

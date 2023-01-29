@@ -23,17 +23,27 @@ namespace SpiderLib
   class Spider : public SpiderServos
   {
     // lift the foot when moving
-    const float c_liftFoot = 15.0;
+    const float c_liftFoot = 20.0;
     // the parts for one step cycle
     const int c_steps = 64;
 
     public:
       Spider();
       ~Spider();
-
+      
+      /**********************************
+       * CREATED BY PROJECT TEAM
+       *********************************/
+      //Wave front right leg
+      PiLib::ErrorCode waveLeg(int wave_counter,int wave_start,int wave_stop,int leg_id);
+      
+      /**********************************
+       * Provided by FH
+       *********************************/
+      
       PiLib::ErrorCode Init();
       PiLib::ErrorCode Reset();
-
+      
       // init leg positions - can be done without Init() -> for unit tests
       PiLib::ErrorCode InitLegs();
 
@@ -105,6 +115,7 @@ namespace SpiderLib
 
       // for testing, switch off during production!
       void dumpCoordinates(int line, const PointArray &points);
+      
 
   };
 }

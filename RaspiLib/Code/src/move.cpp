@@ -10,19 +10,24 @@ using namespace chrono;
 // @brief This function implements the basic walking and evasion procedures
 // @param Spider spider - The spider object
 // @return int - status indicator
-int go_walk(SpiderLib::Spider *spider, ws2811_t *ledstring){
+int go_walk(Spider *spider, ws2811_t *ledstring){
 
+
+	//Preparations for run / init run variables
     int init_turn = 0;
+    int angle = - MAX_TURN_ANGLE;
+    int turn_tries = 0;
+    PiLib::ErrorCode err_stop;
+    bool err_run;
+    //Set spider height
+	PiLib::ErrorCode err_raise = spider->Raise(-80.);
+    
+    //Init usound distance sensor
     const RaspiPinLabel SpiderTriggerPin = PIN13_GPIO27_PCMD;
     const RaspiPinLabel SpiderEchoPin = PIN15_GPIO22;
     UltraSound usound(SpiderTriggerPin, SpiderEchoPin);
-    PiLib::ErrorCode err_stop;
-    bool err_run;
-    int angle = - MAX_TURN_ANGLE;
-
-    int turn_tries = 0;
-
-    while(1){
+    
+	while(1){
       //Walk until obstacle is detected
       while(usound.GetDistance() > 50){
         
@@ -31,7 +36,7 @@ int go_walk(SpiderLib::Spider *spider, ws2811_t *ledstring){
         
         for (int i = 0; i < ledstring->channel[0].count; i++)
         {
-          ledstring->channel[0].leds[i] = 0xFF0000;
+          ledstring->channel[0].leds[i] = 0x00FF00; //GREEN 
         }
               ws2811_render(ledstring);
       
@@ -39,15 +44,13 @@ int go_walk(SpiderLib::Spider *spider, ws2811_t *ledstring){
       }
       
       cout << RED << "Obstacle detected ! Execute evasion protocol\n";
+      
       //Obstacle detected
       while(init_turn){
           
           //Beep once to notify about found obstacle
           single_beep(500);
-          
-          //Init danger led ring
-          init_led();
-        
+      
           //Try differrent angles
           if(angle < MAX_TURN_ANGLE){
             angle = angle + TURN_STEP;
@@ -187,6 +190,6 @@ void dance_spider_dance(Spider *spider,int dance_cycles){
   }else{
     cout << GREEN << "Successfully joined main and secondary threads!\n";
   }
-  pthread_exit(NULL);
+  //pthread_exit(NULL);
   
 }

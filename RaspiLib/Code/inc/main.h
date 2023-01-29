@@ -53,5 +53,6 @@ struct thread_data{
 
 //Function prototypes
 ws2811_t init_led();
+int handle_user_io();
 
 #endif
