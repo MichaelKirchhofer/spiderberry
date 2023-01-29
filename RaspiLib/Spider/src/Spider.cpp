@@ -241,7 +241,7 @@ ErrorCode Spider::waveLeg(int wave_counter,int wave_start,int wave_stop,int leg_
   PiLib::ErrorCode err;
   Leg *p_leg;
   
-  cout << "Leg index "<< leg_id<<"\n";
+  //cout << "Leg index "<< leg_id<<"\n";
   
   switch(leg_id){
      case 0:
@@ -276,6 +276,7 @@ ErrorCode Spider::waveLeg(int wave_counter,int wave_start,int wave_stop,int leg_
       err = p_leg->setAngle(100,-80,wave_start);
       Utils::delay_ms(100);
    }
+   err = p_leg->idlePosition();
     
   return err;
 }

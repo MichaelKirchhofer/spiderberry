@@ -8,19 +8,29 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/admin/Desktop/Code/spiderberry/RaspiLib/BCM2835/bcm2835.c" "/home/admin/Desktop/Code/spiderberry/build/CMakeFiles/spiderberry_library.dir/BCM2835/bcm2835.c.o"
   "/home/admin/Desktop/Code/spiderberry/RaspiLib/BCM2835/bcm2835_fake.c" "/home/admin/Desktop/Code/spiderberry/build/CMakeFiles/spiderberry_library.dir/BCM2835/bcm2835_fake.c.o"
   "/home/admin/Desktop/Code/spiderberry/RaspiLib/BCM2835/bcm2835_wrapper.c" "/home/admin/Desktop/Code/spiderberry/build/CMakeFiles/spiderberry_library.dir/BCM2835/bcm2835_wrapper.c.o"
+  "/home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/dma.c" "/home/admin/Desktop/Code/spiderberry/build/CMakeFiles/spiderberry_library.dir/rpi_ws281x/dma.c.o"
+  "/home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/mailbox.c" "/home/admin/Desktop/Code/spiderberry/build/CMakeFiles/spiderberry_library.dir/rpi_ws281x/mailbox.c.o"
+  "/home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/pcm.c" "/home/admin/Desktop/Code/spiderberry/build/CMakeFiles/spiderberry_library.dir/rpi_ws281x/pcm.c.o"
+  "/home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/pwm.c" "/home/admin/Desktop/Code/spiderberry/build/CMakeFiles/spiderberry_library.dir/rpi_ws281x/pwm.c.o"
+  "/home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/rpihw.c" "/home/admin/Desktop/Code/spiderberry/build/CMakeFiles/spiderberry_library.dir/rpi_ws281x/rpihw.c.o"
+  "/home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/ws2811.c" "/home/admin/Desktop/Code/spiderberry/build/CMakeFiles/spiderberry_library.dir/rpi_ws281x/ws2811.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
-  "/home/admin/Desktop/Code/spiderberry/RaspiLib/Code"
+  "/home/admin/Desktop/Code/spiderberry/RaspiLib/Code/inc"
   "/home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc"
   "/home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/inc"
   "/home/admin/Desktop/Code/spiderberry/RaspiLib/Spider/inc"
   "/home/admin/Desktop/Code/spiderberry/RaspiLib/smbus/inc"
   "/home/admin/Desktop/Code/spiderberry/RaspiLib/BCM2835"
+  "/home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x"
+  "/home/admin/Desktop/Code/spiderberry/RaspiLib/Samples/TestApp/inc"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/admin/Desktop/Code/spiderberry/RaspiLib/Code/src/beep.cpp" "/home/admin/Desktop/Code/spiderberry/build/CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.o"
+  "/home/admin/Desktop/Code/spiderberry/RaspiLib/Code/src/move.cpp" "/home/admin/Desktop/Code/spiderberry/build/CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.o"
   "/home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/src/ADS7830.cpp" "/home/admin/Desktop/Code/spiderberry/build/CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/ADS7830.cpp.o"
   "/home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/src/HTS221.cpp" "/home/admin/Desktop/Code/spiderberry/build/CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/HTS221.cpp.o"
   "/home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/src/LCD_I2C.cpp" "/home/admin/Desktop/Code/spiderberry/build/CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/LCD_I2C.cpp.o"
@@ -41,6 +51,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/src/RaspiLib.cpp" "/home/admin/Desktop/Code/spiderberry/build/CMakeFiles/spiderberry_library.dir/RaspiLib/src/RaspiLib.cpp.o"
   "/home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/src/Utils.cpp" "/home/admin/Desktop/Code/spiderberry/build/CMakeFiles/spiderberry_library.dir/RaspiLib/src/Utils.cpp.o"
   "/home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/src/Vector3D.cpp" "/home/admin/Desktop/Code/spiderberry/build/CMakeFiles/spiderberry_library.dir/RaspiLib/src/Vector3D.cpp.o"
+  "/home/admin/Desktop/Code/spiderberry/RaspiLib/Samples/TestApp/src/adcSample.cpp" "/home/admin/Desktop/Code/spiderberry/build/CMakeFiles/spiderberry_library.dir/Samples/TestApp/src/adcSample.cpp.o"
   "/home/admin/Desktop/Code/spiderberry/RaspiLib/Spider/src/Leg.cpp" "/home/admin/Desktop/Code/spiderberry/build/CMakeFiles/spiderberry_library.dir/Spider/src/Leg.cpp.o"
   "/home/admin/Desktop/Code/spiderberry/RaspiLib/Spider/src/Spider.cpp" "/home/admin/Desktop/Code/spiderberry/build/CMakeFiles/spiderberry_library.dir/Spider/src/Spider.cpp.o"
   "/home/admin/Desktop/Code/spiderberry/RaspiLib/Spider/src/world.cpp" "/home/admin/Desktop/Code/spiderberry/build/CMakeFiles/spiderberry_library.dir/Spider/src/world.cpp.o"
@@ -50,12 +61,14 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/admin/Desktop/Code/spiderberry/RaspiLib/Code"
+  "/home/admin/Desktop/Code/spiderberry/RaspiLib/Code/inc"
   "/home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc"
   "/home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/inc"
   "/home/admin/Desktop/Code/spiderberry/RaspiLib/Spider/inc"
   "/home/admin/Desktop/Code/spiderberry/RaspiLib/smbus/inc"
   "/home/admin/Desktop/Code/spiderberry/RaspiLib/BCM2835"
+  "/home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x"
+  "/home/admin/Desktop/Code/spiderberry/RaspiLib/Samples/TestApp/inc"
   )
 
 # Targets to which this target links.

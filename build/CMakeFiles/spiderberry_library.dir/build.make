@@ -206,9 +206,100 @@ CMakeFiles/spiderberry_library.dir/RaspiLib/src/Vector3D.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spiderberry_library.dir/RaspiLib/src/Vector3D.cpp.s"
 	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/src/Vector3D.cpp -o CMakeFiles/spiderberry_library.dir/RaspiLib/src/Vector3D.cpp.s
 
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/pwm.c.o: CMakeFiles/spiderberry_library.dir/flags.make
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/pwm.c.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/pwm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/spiderberry_library.dir/rpi_ws281x/pwm.c.o"
+	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/spiderberry_library.dir/rpi_ws281x/pwm.c.o -c /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/pwm.c
+
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/pwm.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/spiderberry_library.dir/rpi_ws281x/pwm.c.i"
+	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/pwm.c > CMakeFiles/spiderberry_library.dir/rpi_ws281x/pwm.c.i
+
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/pwm.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/spiderberry_library.dir/rpi_ws281x/pwm.c.s"
+	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/pwm.c -o CMakeFiles/spiderberry_library.dir/rpi_ws281x/pwm.c.s
+
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/dma.c.o: CMakeFiles/spiderberry_library.dir/flags.make
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/dma.c.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/dma.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/spiderberry_library.dir/rpi_ws281x/dma.c.o"
+	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/spiderberry_library.dir/rpi_ws281x/dma.c.o -c /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/dma.c
+
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/dma.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/spiderberry_library.dir/rpi_ws281x/dma.c.i"
+	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/dma.c > CMakeFiles/spiderberry_library.dir/rpi_ws281x/dma.c.i
+
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/dma.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/spiderberry_library.dir/rpi_ws281x/dma.c.s"
+	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/dma.c -o CMakeFiles/spiderberry_library.dir/rpi_ws281x/dma.c.s
+
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/mailbox.c.o: CMakeFiles/spiderberry_library.dir/flags.make
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/mailbox.c.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/mailbox.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/spiderberry_library.dir/rpi_ws281x/mailbox.c.o"
+	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/spiderberry_library.dir/rpi_ws281x/mailbox.c.o -c /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/mailbox.c
+
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/mailbox.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/spiderberry_library.dir/rpi_ws281x/mailbox.c.i"
+	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/mailbox.c > CMakeFiles/spiderberry_library.dir/rpi_ws281x/mailbox.c.i
+
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/mailbox.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/spiderberry_library.dir/rpi_ws281x/mailbox.c.s"
+	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/mailbox.c -o CMakeFiles/spiderberry_library.dir/rpi_ws281x/mailbox.c.s
+
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/rpihw.c.o: CMakeFiles/spiderberry_library.dir/flags.make
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/rpihw.c.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/rpihw.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/spiderberry_library.dir/rpi_ws281x/rpihw.c.o"
+	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/spiderberry_library.dir/rpi_ws281x/rpihw.c.o -c /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/rpihw.c
+
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/rpihw.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/spiderberry_library.dir/rpi_ws281x/rpihw.c.i"
+	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/rpihw.c > CMakeFiles/spiderberry_library.dir/rpi_ws281x/rpihw.c.i
+
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/rpihw.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/spiderberry_library.dir/rpi_ws281x/rpihw.c.s"
+	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/rpihw.c -o CMakeFiles/spiderberry_library.dir/rpi_ws281x/rpihw.c.s
+
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/ws2811.c.o: CMakeFiles/spiderberry_library.dir/flags.make
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/ws2811.c.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/ws2811.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/spiderberry_library.dir/rpi_ws281x/ws2811.c.o"
+	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/spiderberry_library.dir/rpi_ws281x/ws2811.c.o -c /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/ws2811.c
+
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/ws2811.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/spiderberry_library.dir/rpi_ws281x/ws2811.c.i"
+	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/ws2811.c > CMakeFiles/spiderberry_library.dir/rpi_ws281x/ws2811.c.i
+
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/ws2811.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/spiderberry_library.dir/rpi_ws281x/ws2811.c.s"
+	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/ws2811.c -o CMakeFiles/spiderberry_library.dir/rpi_ws281x/ws2811.c.s
+
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/pcm.c.o: CMakeFiles/spiderberry_library.dir/flags.make
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/pcm.c.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/pcm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/spiderberry_library.dir/rpi_ws281x/pcm.c.o"
+	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/spiderberry_library.dir/rpi_ws281x/pcm.c.o -c /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/pcm.c
+
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/pcm.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/spiderberry_library.dir/rpi_ws281x/pcm.c.i"
+	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/pcm.c > CMakeFiles/spiderberry_library.dir/rpi_ws281x/pcm.c.i
+
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/pcm.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/spiderberry_library.dir/rpi_ws281x/pcm.c.s"
+	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/pcm.c -o CMakeFiles/spiderberry_library.dir/rpi_ws281x/pcm.c.s
+
+CMakeFiles/spiderberry_library.dir/Samples/TestApp/src/adcSample.cpp.o: CMakeFiles/spiderberry_library.dir/flags.make
+CMakeFiles/spiderberry_library.dir/Samples/TestApp/src/adcSample.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/Samples/TestApp/src/adcSample.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/spiderberry_library.dir/Samples/TestApp/src/adcSample.cpp.o"
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spiderberry_library.dir/Samples/TestApp/src/adcSample.cpp.o -c /home/admin/Desktop/Code/spiderberry/RaspiLib/Samples/TestApp/src/adcSample.cpp
+
+CMakeFiles/spiderberry_library.dir/Samples/TestApp/src/adcSample.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spiderberry_library.dir/Samples/TestApp/src/adcSample.cpp.i"
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/admin/Desktop/Code/spiderberry/RaspiLib/Samples/TestApp/src/adcSample.cpp > CMakeFiles/spiderberry_library.dir/Samples/TestApp/src/adcSample.cpp.i
+
+CMakeFiles/spiderberry_library.dir/Samples/TestApp/src/adcSample.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spiderberry_library.dir/Samples/TestApp/src/adcSample.cpp.s"
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin/Desktop/Code/spiderberry/RaspiLib/Samples/TestApp/src/adcSample.cpp -o CMakeFiles/spiderberry_library.dir/Samples/TestApp/src/adcSample.cpp.s
+
 CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/ADS7830.cpp.o: CMakeFiles/spiderberry_library.dir/flags.make
 CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/ADS7830.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/src/ADS7830.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/ADS7830.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/ADS7830.cpp.o"
 	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/ADS7830.cpp.o -c /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/src/ADS7830.cpp
 
 CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/ADS7830.cpp.i: cmake_force
@@ -221,7 +312,7 @@ CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/ADS7830.cpp.s: cmake_force
 
 CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/HTS221.cpp.o: CMakeFiles/spiderberry_library.dir/flags.make
 CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/HTS221.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/src/HTS221.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/HTS221.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/HTS221.cpp.o"
 	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/HTS221.cpp.o -c /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/src/HTS221.cpp
 
 CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/HTS221.cpp.i: cmake_force
@@ -234,7 +325,7 @@ CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/HTS221.cpp.s: cmake_force
 
 CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/LCD_I2C.cpp.o: CMakeFiles/spiderberry_library.dir/flags.make
 CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/LCD_I2C.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/src/LCD_I2C.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/LCD_I2C.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/LCD_I2C.cpp.o"
 	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/LCD_I2C.cpp.o -c /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/src/LCD_I2C.cpp
 
 CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/LCD_I2C.cpp.i: cmake_force
@@ -247,7 +338,7 @@ CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/LCD_I2C.cpp.s: cmake_force
 
 CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/lcd.cpp.o: CMakeFiles/spiderberry_library.dir/flags.make
 CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/lcd.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/src/lcd.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/lcd.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/lcd.cpp.o"
 	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/lcd.cpp.o -c /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/src/lcd.cpp
 
 CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/lcd.cpp.i: cmake_force
@@ -260,7 +351,7 @@ CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/lcd.cpp.s: cmake_force
 
 CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/LPS25H.cpp.o: CMakeFiles/spiderberry_library.dir/flags.make
 CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/LPS25H.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/src/LPS25H.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/LPS25H.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/LPS25H.cpp.o"
 	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/LPS25H.cpp.o -c /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/src/LPS25H.cpp
 
 CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/LPS25H.cpp.i: cmake_force
@@ -273,7 +364,7 @@ CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/LPS25H.cpp.s: cmake_force
 
 CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/MPU6050.cpp.o: CMakeFiles/spiderberry_library.dir/flags.make
 CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/MPU6050.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/src/MPU6050.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/MPU6050.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/MPU6050.cpp.o"
 	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/MPU6050.cpp.o -c /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/src/MPU6050.cpp
 
 CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/MPU6050.cpp.i: cmake_force
@@ -286,7 +377,7 @@ CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/MPU6050.cpp.s: cmake_force
 
 CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/PCA9685.cpp.o: CMakeFiles/spiderberry_library.dir/flags.make
 CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/PCA9685.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/src/PCA9685.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/PCA9685.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/PCA9685.cpp.o"
 	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/PCA9685.cpp.o -c /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/src/PCA9685.cpp
 
 CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/PCA9685.cpp.i: cmake_force
@@ -299,7 +390,7 @@ CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/PCA9685.cpp.s: cmake_force
 
 CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/PCF8563.cpp.o: CMakeFiles/spiderberry_library.dir/flags.make
 CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/PCF8563.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/src/PCF8563.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/PCF8563.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/PCF8563.cpp.o"
 	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/PCF8563.cpp.o -c /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/src/PCF8563.cpp
 
 CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/PCF8563.cpp.i: cmake_force
@@ -312,7 +403,7 @@ CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/PCF8563.cpp.s: cmake_force
 
 CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/PCF8591.cpp.o: CMakeFiles/spiderberry_library.dir/flags.make
 CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/PCF8591.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/src/PCF8591.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/PCF8591.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/PCF8591.cpp.o"
 	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/PCF8591.cpp.o -c /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/src/PCF8591.cpp
 
 CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/PCF8591.cpp.i: cmake_force
@@ -325,7 +416,7 @@ CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/PCF8591.cpp.s: cmake_force
 
 CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/UltraSound.cpp.o: CMakeFiles/spiderberry_library.dir/flags.make
 CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/UltraSound.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/src/UltraSound.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/UltraSound.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/UltraSound.cpp.o"
 	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/UltraSound.cpp.o -c /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/src/UltraSound.cpp
 
 CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/UltraSound.cpp.i: cmake_force
@@ -338,7 +429,7 @@ CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/UltraSound.cpp.s: cmake_force
 
 CMakeFiles/spiderberry_library.dir/Spider/src/Leg.cpp.o: CMakeFiles/spiderberry_library.dir/flags.make
 CMakeFiles/spiderberry_library.dir/Spider/src/Leg.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/Spider/src/Leg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/spiderberry_library.dir/Spider/src/Leg.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/spiderberry_library.dir/Spider/src/Leg.cpp.o"
 	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spiderberry_library.dir/Spider/src/Leg.cpp.o -c /home/admin/Desktop/Code/spiderberry/RaspiLib/Spider/src/Leg.cpp
 
 CMakeFiles/spiderberry_library.dir/Spider/src/Leg.cpp.i: cmake_force
@@ -351,7 +442,7 @@ CMakeFiles/spiderberry_library.dir/Spider/src/Leg.cpp.s: cmake_force
 
 CMakeFiles/spiderberry_library.dir/Spider/src/Spider.cpp.o: CMakeFiles/spiderberry_library.dir/flags.make
 CMakeFiles/spiderberry_library.dir/Spider/src/Spider.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/Spider/src/Spider.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/spiderberry_library.dir/Spider/src/Spider.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/spiderberry_library.dir/Spider/src/Spider.cpp.o"
 	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spiderberry_library.dir/Spider/src/Spider.cpp.o -c /home/admin/Desktop/Code/spiderberry/RaspiLib/Spider/src/Spider.cpp
 
 CMakeFiles/spiderberry_library.dir/Spider/src/Spider.cpp.i: cmake_force
@@ -364,7 +455,7 @@ CMakeFiles/spiderberry_library.dir/Spider/src/Spider.cpp.s: cmake_force
 
 CMakeFiles/spiderberry_library.dir/Spider/src/world.cpp.o: CMakeFiles/spiderberry_library.dir/flags.make
 CMakeFiles/spiderberry_library.dir/Spider/src/world.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/Spider/src/world.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/spiderberry_library.dir/Spider/src/world.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/spiderberry_library.dir/Spider/src/world.cpp.o"
 	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spiderberry_library.dir/Spider/src/world.cpp.o -c /home/admin/Desktop/Code/spiderberry/RaspiLib/Spider/src/world.cpp
 
 CMakeFiles/spiderberry_library.dir/Spider/src/world.cpp.i: cmake_force
@@ -375,9 +466,35 @@ CMakeFiles/spiderberry_library.dir/Spider/src/world.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spiderberry_library.dir/Spider/src/world.cpp.s"
 	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin/Desktop/Code/spiderberry/RaspiLib/Spider/src/world.cpp -o CMakeFiles/spiderberry_library.dir/Spider/src/world.cpp.s
 
+CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.o: CMakeFiles/spiderberry_library.dir/flags.make
+CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/Code/src/beep.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.o"
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.o -c /home/admin/Desktop/Code/spiderberry/RaspiLib/Code/src/beep.cpp
+
+CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.i"
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/admin/Desktop/Code/spiderberry/RaspiLib/Code/src/beep.cpp > CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.i
+
+CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.s"
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin/Desktop/Code/spiderberry/RaspiLib/Code/src/beep.cpp -o CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.s
+
+CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.o: CMakeFiles/spiderberry_library.dir/flags.make
+CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/Code/src/move.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.o"
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.o -c /home/admin/Desktop/Code/spiderberry/RaspiLib/Code/src/move.cpp
+
+CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.i"
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/admin/Desktop/Code/spiderberry/RaspiLib/Code/src/move.cpp > CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.i
+
+CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.s"
+	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin/Desktop/Code/spiderberry/RaspiLib/Code/src/move.cpp -o CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.s
+
 CMakeFiles/spiderberry_library.dir/smbus/src/smbus.cpp.o: CMakeFiles/spiderberry_library.dir/flags.make
 CMakeFiles/spiderberry_library.dir/smbus/src/smbus.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/smbus/src/smbus.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/spiderberry_library.dir/smbus/src/smbus.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/spiderberry_library.dir/smbus/src/smbus.cpp.o"
 	/usr/bin/arm-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spiderberry_library.dir/smbus/src/smbus.cpp.o -c /home/admin/Desktop/Code/spiderberry/RaspiLib/smbus/src/smbus.cpp
 
 CMakeFiles/spiderberry_library.dir/smbus/src/smbus.cpp.i: cmake_force
@@ -390,7 +507,7 @@ CMakeFiles/spiderberry_library.dir/smbus/src/smbus.cpp.s: cmake_force
 
 CMakeFiles/spiderberry_library.dir/BCM2835/bcm2835.c.o: CMakeFiles/spiderberry_library.dir/flags.make
 CMakeFiles/spiderberry_library.dir/BCM2835/bcm2835.c.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/BCM2835/bcm2835.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/spiderberry_library.dir/BCM2835/bcm2835.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/spiderberry_library.dir/BCM2835/bcm2835.c.o"
 	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/spiderberry_library.dir/BCM2835/bcm2835.c.o -c /home/admin/Desktop/Code/spiderberry/RaspiLib/BCM2835/bcm2835.c
 
 CMakeFiles/spiderberry_library.dir/BCM2835/bcm2835.c.i: cmake_force
@@ -403,7 +520,7 @@ CMakeFiles/spiderberry_library.dir/BCM2835/bcm2835.c.s: cmake_force
 
 CMakeFiles/spiderberry_library.dir/BCM2835/bcm2835_wrapper.c.o: CMakeFiles/spiderberry_library.dir/flags.make
 CMakeFiles/spiderberry_library.dir/BCM2835/bcm2835_wrapper.c.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/BCM2835/bcm2835_wrapper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/spiderberry_library.dir/BCM2835/bcm2835_wrapper.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/spiderberry_library.dir/BCM2835/bcm2835_wrapper.c.o"
 	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/spiderberry_library.dir/BCM2835/bcm2835_wrapper.c.o -c /home/admin/Desktop/Code/spiderberry/RaspiLib/BCM2835/bcm2835_wrapper.c
 
 CMakeFiles/spiderberry_library.dir/BCM2835/bcm2835_wrapper.c.i: cmake_force
@@ -416,7 +533,7 @@ CMakeFiles/spiderberry_library.dir/BCM2835/bcm2835_wrapper.c.s: cmake_force
 
 CMakeFiles/spiderberry_library.dir/BCM2835/bcm2835_fake.c.o: CMakeFiles/spiderberry_library.dir/flags.make
 CMakeFiles/spiderberry_library.dir/BCM2835/bcm2835_fake.c.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/BCM2835/bcm2835_fake.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/spiderberry_library.dir/BCM2835/bcm2835_fake.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/spiderberry_library.dir/BCM2835/bcm2835_fake.c.o"
 	/usr/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/spiderberry_library.dir/BCM2835/bcm2835_fake.c.o -c /home/admin/Desktop/Code/spiderberry/RaspiLib/BCM2835/bcm2835_fake.c
 
 CMakeFiles/spiderberry_library.dir/BCM2835/bcm2835_fake.c.i: cmake_force
@@ -439,6 +556,13 @@ spiderberry_library_OBJECTS = \
 "CMakeFiles/spiderberry_library.dir/RaspiLib/src/RaspiLib.cpp.o" \
 "CMakeFiles/spiderberry_library.dir/RaspiLib/src/Utils.cpp.o" \
 "CMakeFiles/spiderberry_library.dir/RaspiLib/src/Vector3D.cpp.o" \
+"CMakeFiles/spiderberry_library.dir/rpi_ws281x/pwm.c.o" \
+"CMakeFiles/spiderberry_library.dir/rpi_ws281x/dma.c.o" \
+"CMakeFiles/spiderberry_library.dir/rpi_ws281x/mailbox.c.o" \
+"CMakeFiles/spiderberry_library.dir/rpi_ws281x/rpihw.c.o" \
+"CMakeFiles/spiderberry_library.dir/rpi_ws281x/ws2811.c.o" \
+"CMakeFiles/spiderberry_library.dir/rpi_ws281x/pcm.c.o" \
+"CMakeFiles/spiderberry_library.dir/Samples/TestApp/src/adcSample.cpp.o" \
 "CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/ADS7830.cpp.o" \
 "CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/HTS221.cpp.o" \
 "CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/LCD_I2C.cpp.o" \
@@ -452,6 +576,8 @@ spiderberry_library_OBJECTS = \
 "CMakeFiles/spiderberry_library.dir/Spider/src/Leg.cpp.o" \
 "CMakeFiles/spiderberry_library.dir/Spider/src/Spider.cpp.o" \
 "CMakeFiles/spiderberry_library.dir/Spider/src/world.cpp.o" \
+"CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.o" \
+"CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.o" \
 "CMakeFiles/spiderberry_library.dir/smbus/src/smbus.cpp.o" \
 "CMakeFiles/spiderberry_library.dir/BCM2835/bcm2835.c.o" \
 "CMakeFiles/spiderberry_library.dir/BCM2835/bcm2835_wrapper.c.o" \
@@ -470,6 +596,13 @@ libspiderberry_library.a: CMakeFiles/spiderberry_library.dir/RaspiLib/src/RaspiB
 libspiderberry_library.a: CMakeFiles/spiderberry_library.dir/RaspiLib/src/RaspiLib.cpp.o
 libspiderberry_library.a: CMakeFiles/spiderberry_library.dir/RaspiLib/src/Utils.cpp.o
 libspiderberry_library.a: CMakeFiles/spiderberry_library.dir/RaspiLib/src/Vector3D.cpp.o
+libspiderberry_library.a: CMakeFiles/spiderberry_library.dir/rpi_ws281x/pwm.c.o
+libspiderberry_library.a: CMakeFiles/spiderberry_library.dir/rpi_ws281x/dma.c.o
+libspiderberry_library.a: CMakeFiles/spiderberry_library.dir/rpi_ws281x/mailbox.c.o
+libspiderberry_library.a: CMakeFiles/spiderberry_library.dir/rpi_ws281x/rpihw.c.o
+libspiderberry_library.a: CMakeFiles/spiderberry_library.dir/rpi_ws281x/ws2811.c.o
+libspiderberry_library.a: CMakeFiles/spiderberry_library.dir/rpi_ws281x/pcm.c.o
+libspiderberry_library.a: CMakeFiles/spiderberry_library.dir/Samples/TestApp/src/adcSample.cpp.o
 libspiderberry_library.a: CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/ADS7830.cpp.o
 libspiderberry_library.a: CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/HTS221.cpp.o
 libspiderberry_library.a: CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/LCD_I2C.cpp.o
@@ -483,13 +616,15 @@ libspiderberry_library.a: CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/Ult
 libspiderberry_library.a: CMakeFiles/spiderberry_library.dir/Spider/src/Leg.cpp.o
 libspiderberry_library.a: CMakeFiles/spiderberry_library.dir/Spider/src/Spider.cpp.o
 libspiderberry_library.a: CMakeFiles/spiderberry_library.dir/Spider/src/world.cpp.o
+libspiderberry_library.a: CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.o
+libspiderberry_library.a: CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.o
 libspiderberry_library.a: CMakeFiles/spiderberry_library.dir/smbus/src/smbus.cpp.o
 libspiderberry_library.a: CMakeFiles/spiderberry_library.dir/BCM2835/bcm2835.c.o
 libspiderberry_library.a: CMakeFiles/spiderberry_library.dir/BCM2835/bcm2835_wrapper.c.o
 libspiderberry_library.a: CMakeFiles/spiderberry_library.dir/BCM2835/bcm2835_fake.c.o
 libspiderberry_library.a: CMakeFiles/spiderberry_library.dir/build.make
 libspiderberry_library.a: CMakeFiles/spiderberry_library.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX static library libspiderberry_library.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/admin/Desktop/Code/spiderberry/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Linking CXX static library libspiderberry_library.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/spiderberry_library.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/spiderberry_library.dir/link.txt --verbose=$(VERBOSE)
 

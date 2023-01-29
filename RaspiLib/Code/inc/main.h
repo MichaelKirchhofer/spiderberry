@@ -1,12 +1,11 @@
+#ifndef _MAIN_H_INCLUDED
+#define _MAIN_H_INCLUDED
+
 //Spider includes
 #include <Spider.h>
 #include <RaspiLib.h>
 #include <UltraSound.h>
 #include <iostream>
-#ifndef _MAIN_H_INCLUDED
-#define _MAIN_H_INCLUDED
-
-
 #include <chrono>
 #include <thread>
 #include <unistd.h>
@@ -54,5 +53,6 @@ struct thread_data{
 //Function prototypes
 ws2811_t init_led();
 int handle_user_io();
+void print_user_menu();
 
 #endif

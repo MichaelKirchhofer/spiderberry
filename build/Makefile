@@ -236,6 +236,33 @@ BCM2835/bcm2835_wrapper.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/spiderberry_library.dir/build.make CMakeFiles/spiderberry_library.dir/BCM2835/bcm2835_wrapper.c.s
 .PHONY : BCM2835/bcm2835_wrapper.c.s
 
+Code/src/beep.o: Code/src/beep.cpp.o
+
+.PHONY : Code/src/beep.o
+
+# target to build an object file
+Code/src/beep.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spiderberry_library.dir/build.make CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.o
+.PHONY : Code/src/beep.cpp.o
+
+Code/src/beep.i: Code/src/beep.cpp.i
+
+.PHONY : Code/src/beep.i
+
+# target to preprocess a source file
+Code/src/beep.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spiderberry_library.dir/build.make CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.i
+.PHONY : Code/src/beep.cpp.i
+
+Code/src/beep.s: Code/src/beep.cpp.s
+
+.PHONY : Code/src/beep.s
+
+# target to generate assembly for a file
+Code/src/beep.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spiderberry_library.dir/build.make CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.s
+.PHONY : Code/src/beep.cpp.s
+
 Code/src/main.o: Code/src/main.cpp.o
 
 .PHONY : Code/src/main.o
@@ -262,6 +289,33 @@ Code/src/main.s: Code/src/main.cpp.s
 Code/src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/spiderberry_exe.dir/build.make CMakeFiles/spiderberry_exe.dir/Code/src/main.cpp.s
 .PHONY : Code/src/main.cpp.s
+
+Code/src/move.o: Code/src/move.cpp.o
+
+.PHONY : Code/src/move.o
+
+# target to build an object file
+Code/src/move.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spiderberry_library.dir/build.make CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.o
+.PHONY : Code/src/move.cpp.o
+
+Code/src/move.i: Code/src/move.cpp.i
+
+.PHONY : Code/src/move.i
+
+# target to preprocess a source file
+Code/src/move.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spiderberry_library.dir/build.make CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.i
+.PHONY : Code/src/move.cpp.i
+
+Code/src/move.s: Code/src/move.cpp.s
+
+.PHONY : Code/src/move.s
+
+# target to generate assembly for a file
+Code/src/move.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spiderberry_library.dir/build.make CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.s
+.PHONY : Code/src/move.cpp.s
 
 RaspiBlocks/src/ADS7830.o: RaspiBlocks/src/ADS7830.cpp.o
 
@@ -803,6 +857,33 @@ RaspiLib/src/Vector3D.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/spiderberry_library.dir/build.make CMakeFiles/spiderberry_library.dir/RaspiLib/src/Vector3D.cpp.s
 .PHONY : RaspiLib/src/Vector3D.cpp.s
 
+Samples/TestApp/src/adcSample.o: Samples/TestApp/src/adcSample.cpp.o
+
+.PHONY : Samples/TestApp/src/adcSample.o
+
+# target to build an object file
+Samples/TestApp/src/adcSample.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spiderberry_library.dir/build.make CMakeFiles/spiderberry_library.dir/Samples/TestApp/src/adcSample.cpp.o
+.PHONY : Samples/TestApp/src/adcSample.cpp.o
+
+Samples/TestApp/src/adcSample.i: Samples/TestApp/src/adcSample.cpp.i
+
+.PHONY : Samples/TestApp/src/adcSample.i
+
+# target to preprocess a source file
+Samples/TestApp/src/adcSample.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spiderberry_library.dir/build.make CMakeFiles/spiderberry_library.dir/Samples/TestApp/src/adcSample.cpp.i
+.PHONY : Samples/TestApp/src/adcSample.cpp.i
+
+Samples/TestApp/src/adcSample.s: Samples/TestApp/src/adcSample.cpp.s
+
+.PHONY : Samples/TestApp/src/adcSample.s
+
+# target to generate assembly for a file
+Samples/TestApp/src/adcSample.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spiderberry_library.dir/build.make CMakeFiles/spiderberry_library.dir/Samples/TestApp/src/adcSample.cpp.s
+.PHONY : Samples/TestApp/src/adcSample.cpp.s
+
 Spider/src/Leg.o: Spider/src/Leg.cpp.o
 
 .PHONY : Spider/src/Leg.o
@@ -884,6 +965,168 @@ Spider/src/world.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/spiderberry_library.dir/build.make CMakeFiles/spiderberry_library.dir/Spider/src/world.cpp.s
 .PHONY : Spider/src/world.cpp.s
 
+rpi_ws281x/dma.o: rpi_ws281x/dma.c.o
+
+.PHONY : rpi_ws281x/dma.o
+
+# target to build an object file
+rpi_ws281x/dma.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spiderberry_library.dir/build.make CMakeFiles/spiderberry_library.dir/rpi_ws281x/dma.c.o
+.PHONY : rpi_ws281x/dma.c.o
+
+rpi_ws281x/dma.i: rpi_ws281x/dma.c.i
+
+.PHONY : rpi_ws281x/dma.i
+
+# target to preprocess a source file
+rpi_ws281x/dma.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spiderberry_library.dir/build.make CMakeFiles/spiderberry_library.dir/rpi_ws281x/dma.c.i
+.PHONY : rpi_ws281x/dma.c.i
+
+rpi_ws281x/dma.s: rpi_ws281x/dma.c.s
+
+.PHONY : rpi_ws281x/dma.s
+
+# target to generate assembly for a file
+rpi_ws281x/dma.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spiderberry_library.dir/build.make CMakeFiles/spiderberry_library.dir/rpi_ws281x/dma.c.s
+.PHONY : rpi_ws281x/dma.c.s
+
+rpi_ws281x/mailbox.o: rpi_ws281x/mailbox.c.o
+
+.PHONY : rpi_ws281x/mailbox.o
+
+# target to build an object file
+rpi_ws281x/mailbox.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spiderberry_library.dir/build.make CMakeFiles/spiderberry_library.dir/rpi_ws281x/mailbox.c.o
+.PHONY : rpi_ws281x/mailbox.c.o
+
+rpi_ws281x/mailbox.i: rpi_ws281x/mailbox.c.i
+
+.PHONY : rpi_ws281x/mailbox.i
+
+# target to preprocess a source file
+rpi_ws281x/mailbox.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spiderberry_library.dir/build.make CMakeFiles/spiderberry_library.dir/rpi_ws281x/mailbox.c.i
+.PHONY : rpi_ws281x/mailbox.c.i
+
+rpi_ws281x/mailbox.s: rpi_ws281x/mailbox.c.s
+
+.PHONY : rpi_ws281x/mailbox.s
+
+# target to generate assembly for a file
+rpi_ws281x/mailbox.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spiderberry_library.dir/build.make CMakeFiles/spiderberry_library.dir/rpi_ws281x/mailbox.c.s
+.PHONY : rpi_ws281x/mailbox.c.s
+
+rpi_ws281x/pcm.o: rpi_ws281x/pcm.c.o
+
+.PHONY : rpi_ws281x/pcm.o
+
+# target to build an object file
+rpi_ws281x/pcm.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spiderberry_library.dir/build.make CMakeFiles/spiderberry_library.dir/rpi_ws281x/pcm.c.o
+.PHONY : rpi_ws281x/pcm.c.o
+
+rpi_ws281x/pcm.i: rpi_ws281x/pcm.c.i
+
+.PHONY : rpi_ws281x/pcm.i
+
+# target to preprocess a source file
+rpi_ws281x/pcm.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spiderberry_library.dir/build.make CMakeFiles/spiderberry_library.dir/rpi_ws281x/pcm.c.i
+.PHONY : rpi_ws281x/pcm.c.i
+
+rpi_ws281x/pcm.s: rpi_ws281x/pcm.c.s
+
+.PHONY : rpi_ws281x/pcm.s
+
+# target to generate assembly for a file
+rpi_ws281x/pcm.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spiderberry_library.dir/build.make CMakeFiles/spiderberry_library.dir/rpi_ws281x/pcm.c.s
+.PHONY : rpi_ws281x/pcm.c.s
+
+rpi_ws281x/pwm.o: rpi_ws281x/pwm.c.o
+
+.PHONY : rpi_ws281x/pwm.o
+
+# target to build an object file
+rpi_ws281x/pwm.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spiderberry_library.dir/build.make CMakeFiles/spiderberry_library.dir/rpi_ws281x/pwm.c.o
+.PHONY : rpi_ws281x/pwm.c.o
+
+rpi_ws281x/pwm.i: rpi_ws281x/pwm.c.i
+
+.PHONY : rpi_ws281x/pwm.i
+
+# target to preprocess a source file
+rpi_ws281x/pwm.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spiderberry_library.dir/build.make CMakeFiles/spiderberry_library.dir/rpi_ws281x/pwm.c.i
+.PHONY : rpi_ws281x/pwm.c.i
+
+rpi_ws281x/pwm.s: rpi_ws281x/pwm.c.s
+
+.PHONY : rpi_ws281x/pwm.s
+
+# target to generate assembly for a file
+rpi_ws281x/pwm.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spiderberry_library.dir/build.make CMakeFiles/spiderberry_library.dir/rpi_ws281x/pwm.c.s
+.PHONY : rpi_ws281x/pwm.c.s
+
+rpi_ws281x/rpihw.o: rpi_ws281x/rpihw.c.o
+
+.PHONY : rpi_ws281x/rpihw.o
+
+# target to build an object file
+rpi_ws281x/rpihw.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spiderberry_library.dir/build.make CMakeFiles/spiderberry_library.dir/rpi_ws281x/rpihw.c.o
+.PHONY : rpi_ws281x/rpihw.c.o
+
+rpi_ws281x/rpihw.i: rpi_ws281x/rpihw.c.i
+
+.PHONY : rpi_ws281x/rpihw.i
+
+# target to preprocess a source file
+rpi_ws281x/rpihw.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spiderberry_library.dir/build.make CMakeFiles/spiderberry_library.dir/rpi_ws281x/rpihw.c.i
+.PHONY : rpi_ws281x/rpihw.c.i
+
+rpi_ws281x/rpihw.s: rpi_ws281x/rpihw.c.s
+
+.PHONY : rpi_ws281x/rpihw.s
+
+# target to generate assembly for a file
+rpi_ws281x/rpihw.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spiderberry_library.dir/build.make CMakeFiles/spiderberry_library.dir/rpi_ws281x/rpihw.c.s
+.PHONY : rpi_ws281x/rpihw.c.s
+
+rpi_ws281x/ws2811.o: rpi_ws281x/ws2811.c.o
+
+.PHONY : rpi_ws281x/ws2811.o
+
+# target to build an object file
+rpi_ws281x/ws2811.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spiderberry_library.dir/build.make CMakeFiles/spiderberry_library.dir/rpi_ws281x/ws2811.c.o
+.PHONY : rpi_ws281x/ws2811.c.o
+
+rpi_ws281x/ws2811.i: rpi_ws281x/ws2811.c.i
+
+.PHONY : rpi_ws281x/ws2811.i
+
+# target to preprocess a source file
+rpi_ws281x/ws2811.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spiderberry_library.dir/build.make CMakeFiles/spiderberry_library.dir/rpi_ws281x/ws2811.c.i
+.PHONY : rpi_ws281x/ws2811.c.i
+
+rpi_ws281x/ws2811.s: rpi_ws281x/ws2811.c.s
+
+.PHONY : rpi_ws281x/ws2811.s
+
+# target to generate assembly for a file
+rpi_ws281x/ws2811.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spiderberry_library.dir/build.make CMakeFiles/spiderberry_library.dir/rpi_ws281x/ws2811.c.s
+.PHONY : rpi_ws281x/ws2811.c.s
+
 smbus/src/smbus.o: smbus/src/smbus.cpp.o
 
 .PHONY : smbus/src/smbus.o
@@ -930,9 +1173,15 @@ help:
 	@echo "... BCM2835/bcm2835_wrapper.o"
 	@echo "... BCM2835/bcm2835_wrapper.i"
 	@echo "... BCM2835/bcm2835_wrapper.s"
+	@echo "... Code/src/beep.o"
+	@echo "... Code/src/beep.i"
+	@echo "... Code/src/beep.s"
 	@echo "... Code/src/main.o"
 	@echo "... Code/src/main.i"
 	@echo "... Code/src/main.s"
+	@echo "... Code/src/move.o"
+	@echo "... Code/src/move.i"
+	@echo "... Code/src/move.s"
 	@echo "... RaspiBlocks/src/ADS7830.o"
 	@echo "... RaspiBlocks/src/ADS7830.i"
 	@echo "... RaspiBlocks/src/ADS7830.s"
@@ -993,6 +1242,9 @@ help:
 	@echo "... RaspiLib/src/Vector3D.o"
 	@echo "... RaspiLib/src/Vector3D.i"
 	@echo "... RaspiLib/src/Vector3D.s"
+	@echo "... Samples/TestApp/src/adcSample.o"
+	@echo "... Samples/TestApp/src/adcSample.i"
+	@echo "... Samples/TestApp/src/adcSample.s"
 	@echo "... Spider/src/Leg.o"
 	@echo "... Spider/src/Leg.i"
 	@echo "... Spider/src/Leg.s"
@@ -1002,6 +1254,24 @@ help:
 	@echo "... Spider/src/world.o"
 	@echo "... Spider/src/world.i"
 	@echo "... Spider/src/world.s"
+	@echo "... rpi_ws281x/dma.o"
+	@echo "... rpi_ws281x/dma.i"
+	@echo "... rpi_ws281x/dma.s"
+	@echo "... rpi_ws281x/mailbox.o"
+	@echo "... rpi_ws281x/mailbox.i"
+	@echo "... rpi_ws281x/mailbox.s"
+	@echo "... rpi_ws281x/pcm.o"
+	@echo "... rpi_ws281x/pcm.i"
+	@echo "... rpi_ws281x/pcm.s"
+	@echo "... rpi_ws281x/pwm.o"
+	@echo "... rpi_ws281x/pwm.i"
+	@echo "... rpi_ws281x/pwm.s"
+	@echo "... rpi_ws281x/rpihw.o"
+	@echo "... rpi_ws281x/rpihw.i"
+	@echo "... rpi_ws281x/rpihw.s"
+	@echo "... rpi_ws281x/ws2811.o"
+	@echo "... rpi_ws281x/ws2811.i"
+	@echo "... rpi_ws281x/ws2811.s"
 	@echo "... smbus/src/smbus.o"
 	@echo "... smbus/src/smbus.i"
 	@echo "... smbus/src/smbus.s"

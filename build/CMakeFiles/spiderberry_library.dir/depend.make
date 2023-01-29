@@ -11,6 +11,77 @@ CMakeFiles/spiderberry_library.dir/BCM2835/bcm2835_wrapper.c.o: /home/admin/Desk
 CMakeFiles/spiderberry_library.dir/BCM2835/bcm2835_wrapper.c.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/BCM2835/bcm2835.h
 CMakeFiles/spiderberry_library.dir/BCM2835/bcm2835_wrapper.c.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/BCM2835/bcm2835_wrapper.c
 
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/dma.c.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/dma.c
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/dma.c.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/dma.h
+
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/mailbox.c.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/mailbox.c
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/mailbox.c.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/mailbox.h
+
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/pcm.c.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/pcm.c
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/pcm.c.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/pcm.h
+
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/pwm.c.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/pwm.c
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/pwm.c.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/pwm.h
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/pwm.c.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/rpihw.h
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/pwm.c.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/ws2811.h
+
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/rpihw.c.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/rpihw.c
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/rpihw.c.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/rpihw.h
+
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/ws2811.c.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/clk.h
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/ws2811.c.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/dma.h
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/ws2811.c.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/gpio.h
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/ws2811.c.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/mailbox.h
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/ws2811.c.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/pcm.h
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/ws2811.c.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/pwm.h
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/ws2811.c.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/rpihw.h
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/ws2811.c.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/ws2811.c
+CMakeFiles/spiderberry_library.dir/rpi_ws281x/ws2811.c.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x/ws2811.h
+
+CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/Code/inc/beep.h
+CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/Code/inc/main.h
+CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/Code/inc/move.h
+CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/Code/src/beep.cpp
+CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/inc/UltraSound.h
+CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/BoardInfo.h
+CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/ErrorCode.h
+CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/IBoard.h
+CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/II2c.h
+CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/IPin.h
+CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/Quaternion.h
+CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/RaspiLib.h
+CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/Utils.h
+CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/Vector3D.h
+CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/pwm.h
+CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/rpihw.h
+CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/ws2811.h
+CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/Samples/TestApp/inc/adcSample.h
+CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/Spider/inc/Spider.h
+CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/Spider/inc/SpiderServos.h
+CMakeFiles/spiderberry_library.dir/Code/src/beep.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/Spider/inc/world.h
+
+CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/Code/inc/beep.h
+CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/Code/inc/main.h
+CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/Code/inc/move.h
+CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/Code/src/move.cpp
+CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/inc/UltraSound.h
+CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/BoardInfo.h
+CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/ErrorCode.h
+CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/IBoard.h
+CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/II2c.h
+CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/IPin.h
+CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/Quaternion.h
+CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/RaspiLib.h
+CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/Utils.h
+CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/Vector3D.h
+CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/pwm.h
+CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/rpihw.h
+CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/ws2811.h
+CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/Samples/TestApp/inc/adcSample.h
+CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/Spider/inc/Spider.h
+CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/Spider/inc/SpiderServos.h
+CMakeFiles/spiderberry_library.dir/Code/src/move.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/Spider/inc/world.h
+
 CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/ADS7830.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/inc/ADS7830.h
 CMakeFiles/spiderberry_library.dir/RaspiBlocks/src/ADS7830.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/src/ADS7830.cpp
 
@@ -66,11 +137,32 @@ CMakeFiles/spiderberry_library.dir/RaspiLib/src/Utils.cpp.o: /home/admin/Desktop
 
 CMakeFiles/spiderberry_library.dir/RaspiLib/src/Vector3D.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/src/Vector3D.cpp
 
+CMakeFiles/spiderberry_library.dir/Samples/TestApp/src/adcSample.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/inc/ADS7830.h
+CMakeFiles/spiderberry_library.dir/Samples/TestApp/src/adcSample.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/inc/PCF8591.h
+CMakeFiles/spiderberry_library.dir/Samples/TestApp/src/adcSample.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/BoardInfo.h
+CMakeFiles/spiderberry_library.dir/Samples/TestApp/src/adcSample.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/ErrorCode.h
+CMakeFiles/spiderberry_library.dir/Samples/TestApp/src/adcSample.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/IBoard.h
+CMakeFiles/spiderberry_library.dir/Samples/TestApp/src/adcSample.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/II2c.h
+CMakeFiles/spiderberry_library.dir/Samples/TestApp/src/adcSample.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/IPin.h
+CMakeFiles/spiderberry_library.dir/Samples/TestApp/src/adcSample.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/RaspiLib.h
+CMakeFiles/spiderberry_library.dir/Samples/TestApp/src/adcSample.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/Utils.h
+CMakeFiles/spiderberry_library.dir/Samples/TestApp/src/adcSample.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/Samples/TestApp/inc/adcSample.h
+CMakeFiles/spiderberry_library.dir/Samples/TestApp/src/adcSample.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/Samples/TestApp/src/adcSample.cpp
+
 CMakeFiles/spiderberry_library.dir/Spider/src/Leg.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/Spider/inc/Leg.h
 CMakeFiles/spiderberry_library.dir/Spider/src/Leg.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/Spider/inc/SpiderServos.h
 CMakeFiles/spiderberry_library.dir/Spider/src/Leg.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/Spider/src/Leg.cpp
 
 CMakeFiles/spiderberry_library.dir/Spider/src/Spider.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/inc/PCA9685.h
+CMakeFiles/spiderberry_library.dir/Spider/src/Spider.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/BoardInfo.h
+CMakeFiles/spiderberry_library.dir/Spider/src/Spider.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/ErrorCode.h
+CMakeFiles/spiderberry_library.dir/Spider/src/Spider.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/IBoard.h
+CMakeFiles/spiderberry_library.dir/Spider/src/Spider.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/II2c.h
+CMakeFiles/spiderberry_library.dir/Spider/src/Spider.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/IPin.h
+CMakeFiles/spiderberry_library.dir/Spider/src/Spider.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/Quaternion.h
+CMakeFiles/spiderberry_library.dir/Spider/src/Spider.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/RaspiLib.h
+CMakeFiles/spiderberry_library.dir/Spider/src/Spider.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/Utils.h
+CMakeFiles/spiderberry_library.dir/Spider/src/Spider.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc/Vector3D.h
 CMakeFiles/spiderberry_library.dir/Spider/src/Spider.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/Spider/inc/Leg.h
 CMakeFiles/spiderberry_library.dir/Spider/src/Spider.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/Spider/inc/Spider.h
 CMakeFiles/spiderberry_library.dir/Spider/src/Spider.cpp.o: /home/admin/Desktop/Code/spiderberry/RaspiLib/Spider/inc/SpiderServos.h

@@ -10,12 +10,14 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/admin/Desktop/Code/spiderberry/RaspiLib/Code"
+  "/home/admin/Desktop/Code/spiderberry/RaspiLib/Code/inc"
   "/home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiLib/inc"
   "/home/admin/Desktop/Code/spiderberry/RaspiLib/RaspiBlocks/inc"
   "/home/admin/Desktop/Code/spiderberry/RaspiLib/Spider/inc"
   "/home/admin/Desktop/Code/spiderberry/RaspiLib/smbus/inc"
   "/home/admin/Desktop/Code/spiderberry/RaspiLib/BCM2835"
+  "/home/admin/Desktop/Code/spiderberry/RaspiLib/rpi_ws281x"
+  "/home/admin/Desktop/Code/spiderberry/RaspiLib/Samples/TestApp/inc"
   )
 
 # Targets to which this target links.
