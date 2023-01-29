@@ -13,7 +13,7 @@ find_package(Threads REQUIRED)
 #add_subdirectory(Code)
 #add_subdirectory(RaspiLib/RaspiBlocks)
 #add_subdirectory(RaspiLib/Spider)
-list(APPEND EXTRA_LIBS Spider RaspiBlocks RaspiLib BCM2835 smbus rpi_ws281x Samples)
+list(APPEND EXTRA_LIBS Spider RaspiBlocks RaspiLib BCM2835 smbus rpi_ws281x Samples Code)
 list(APPEND EXTRA_INCLUDES 
 ${PROJECT_SOURCE_DIR}/Spider/inc 
 ${PROJECT_SOURCE_DIR}/Samples/TestApp/inc  
@@ -21,7 +21,9 @@ ${PROJECT_SOURCE_DIR}/rpi_ws281x
 ${PROJECT_SOURCE_DIR}/RaspiBlocks/inc 
 ${PROJECT_SOURCE_DIR}/RaspiLib/inc 
 ${PROJECT_SOURCE_DIR}/BCM2835 
-$(PROJECT_SOURCE_DIR)/smbus/inc)
+$(PROJECT_SOURCE_DIR)/smbus/inc
+$(PROJECT_SOURCE_DIR)/Code/inc
+)
 
 #add_subdirectory(RaspiLibTest)
 #add_subdirectory(SpiderTest)
@@ -53,6 +55,7 @@ rpi_ws281x/ws2811.c
 rpi_ws281x/pcm.c
 Samples/TestApp/src/adcSample.cpp
 
+
 RaspiBlocks/src/ADS7830.cpp
 RaspiBlocks/src/HTS221.cpp
 RaspiBlocks/src/LCD_I2C.cpp
@@ -68,13 +71,16 @@ Spider/src/Leg.cpp
 Spider/src/Spider.cpp
 Spider/src/world.cpp
 
+Code/src/beep.cpp
+Code/src/move.cpp
+
 smbus/src/smbus.cpp
 
 BCM2835/bcm2835.c
 BCM2835/bcm2835_wrapper.c
 BCM2835/bcm2835_fake.c)
 
-target_include_directories(spiderberry_library PUBLIC  Code/ RaspiLib/inc/ RaspiBlocks/inc Spider/inc smbus/inc/ BCM2835/ rpi_ws281x/ Samples/TestApp/inc)
+target_include_directories(spiderberry_library PUBLIC  Code/inc/ RaspiLib/inc/ RaspiBlocks/inc Spider/inc smbus/inc/ BCM2835/ rpi_ws281x/ Samples/TestApp/inc)
 
 add_executable(spiderberry_exe Code/src/main.cpp)
 target_link_libraries(spiderberry_exe PRIVATE spiderberry_library Threads::Threads)
