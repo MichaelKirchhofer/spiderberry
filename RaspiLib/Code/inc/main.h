@@ -15,9 +15,10 @@
 #include <unistd.h>
 #include <cstdlib>
 #include <pthread.h>
-#include <string>
+#include <string> 
 #include <move.h>
 #include <beep.h>
+#include <ADS7830.h>
 
 // LED lib
 #include "ws2811.h" 
@@ -65,5 +66,6 @@ struct thread_data_spider{
 ws2811_t init_led();
 int handle_user_io();
 void print_user_menu();
+float read_adc(ADS7830 *p_adc);
 
 #endif

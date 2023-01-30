@@ -71,6 +71,7 @@ int go_walk(Spider *spider, ws2811_t *ledstring, int obstacles_until_quit){
             cout << "Obstacles remaining until shutdown to menu: "<<
             obstacles_until_quit-obstacles<< " !\n";
             sos_beep(2);
+            stand_up(1,spider);
             
           }
           //Try evading the obstacle

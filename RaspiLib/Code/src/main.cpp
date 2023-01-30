@@ -31,11 +31,16 @@ int main(int argc, char *argv[])
 // @param none
 // @return int state - exit condition
 int handle_user_io(){
-
-  //Init Spider
+    
+  //Init Spider 
   Spider mySpider;
   Spider *p_spider = &mySpider;
   ErrorCode err = mySpider.Init();
+  
+  //Init ADC
+  ADS7830 adc(0x48);
+  ADS7830 *p_adc = &adc;
+ 
   //Set spider height
   PiLib::ErrorCode err_raise = mySpider.Raise(-80.);
   stand_up(1,p_spider);
@@ -51,6 +56,7 @@ int handle_user_io(){
   sleep_for(milliseconds(500));
   
   //Operation parameters:
+  float battery_voltage = 0.;
   int is_running = 1;
   int user_input;
   //Wave 
@@ -64,6 +70,15 @@ int handle_user_io(){
   int obstacles_until_quit;
   
   while(is_running){
+    
+    battery_voltage = read_adc(p_adc);
+    
+    if(battery_voltage < 4.6){
+      cout << RED << "Battery Level: "<< battery_voltage << " too low!\n";
+      lie_down(1,p_spider);
+      sos_beep(100);
+      is_running;
+    }
     
     print_user_menu();
     cin >> user_input;
@@ -100,8 +115,8 @@ int handle_user_io(){
           wave_stop_pos = 80;
         }
         //Which leg should wave
-        cout << CYAN <<"Which leg do you want let wave?\n 0 - Front Left |";
-        cout << "1 - Middle Left | 2 - Back Left\n";
+        cout << CYAN <<"Which leg do you want let wave?\n";
+        cout << "0 - Front Left | 1 - Middle Left | 2 - Back Left\n";
         cout << "3 - Front Right | 4 - Middle Right | 5 - Back Right\n";
         cout << "Enter leg number: ";
         cin >> leg_index;
@@ -182,6 +197,31 @@ int handle_user_io(){
   
   return 0;
 }
+// @brief This function checks the battery level on the adc
+// @param none
+// @return float read_adc value 
+float read_adc(ADS7830 *p_adc){
+  
+  int adc_conversion = 0; 
+  float adc_return = 0.;
+  
+  //Channel 0
+  p_adc->Read(0,adc_conversion);
+  
+  adc_return += adc_conversion;
+  
+  //Channel 4
+  p_adc->Read(4,adc_conversion);
+  
+  adc_return += adc_conversion;
+  
+  adc_return = adc_return * 5.; // 5V Reference voltage
+  adc_return = (adc_return / 255.); // 255 resolution
+  
+  //cout << "Current Battery Level: "<< adc_return <<" !\n";
+  return adc_return;
+}
+
 
 // @brief This function prints out the top level user menu
 // @param none
